@@ -1,0 +1,10 @@
+/* ============================================= */
+/* CSS for control sap.apb.makit/Chart.control */
+/* ============================================= */
+
+@sapUiChartFontFamily: 'OpenSans-Regular', sans-serif;
+
+@sapUiChartValueBubbleLegendFontWeight: Normal;
+
+@sapUiChartTableHighlightColor: #e6f2f9;
+@sapUiChartTableHighlightTextColor: #666666;

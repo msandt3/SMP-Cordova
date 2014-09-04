@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>SuperList</name>
+
+	<documentation>SuperList control</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property name="dataSource" type="sap.ui.core/string">
+			<documentation>dataSource name of the SuperList</documentation>
+		</property>
+		<property group="Dimension" name="height" type="sap.ui.core/CSSSize" defaultValue="100%">
+			<documentation>The height of the SuperList</documentation>
+		</property>
+		<property name="metadataFile" type="sap.ui.core/URI">
+			<documentation>metadata file</documentation>
+		</property>
+		<property group="Dimension" name="width" type="sap.ui.core/CSSSize" defaultValue="100%">
+			<documentation>The width of the SuperList</documentation>
+		</property>
+		<property group="Misc" name="readRows" type="sap.ui.core/string" defaultValue="200">
+			<documentation>readRows</documentation>
+		</property>
+	</properties>
+	<events>
+		<event name="dataTableQuery">
+			<documentation>dataTableQuery</documentation>
+		</event>
+		<event name="rowFocusChanged">
+			<documentation>rowFocusChanged</documentation>
+		</event>
+		<event name="itemChanged">
+			<documentation>itemChanged</documentation>
+		</event>
+		<event name="buttonClicked">
+			<documentation>buttonClicked</documentation>
+		</event>
+		<event name="updateEnd">
+			<documentation>updateEnd</documentation>
+		</event>
+		<event name="error">
+			<documentation>error</documentation>
+		</event>
+	</events>
+	<methods>
+		<method name="getSelectedCategory" type="sap.ui.core/string">
+			<documentation>Get the value of the currently highlighted category</documentation>
+		</method>
+		<method name="getSelectedSeries" type="sap.ui.core/string">
+			<documentation>Get the value of the currently highlighted series</documentation>
+		</method>
+		<method name="getNumberOfCategories" type="sap.ui.core/int">
+			<documentation>Get the number of distinct category values</documentation>
+		</method>
+		<method name="getSelectedCategoryGroup" type="sap.ui.core/object">
+			<documentation>Return an array of categories value that is currently selected.</documentation>
+		</method>
+		<method name="refreshData" type="sap.ui.core/void">
+			<documentation>re-retrieve data from the datasource and re-render chart</documentation>
+		</method>
+	</methods>
+</control>

@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>BadgeButton</name>
+
+	<documentation>BadgeButton control</documentation>
+
+	<baseType>sap.m/Button</baseType>
+	<properties>
+		<property name="badge" type="sap.ui.core/string" group="Misc">
+			<documentation>badge</documentation>
+		</property>
+	</properties>
+</control>

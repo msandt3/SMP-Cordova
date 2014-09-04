@@ -1,0 +1,2236 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *
+ * (c) Copyright 2009-2012 SAP AG. All rights reserved
+ */
+/* Global CSS for 'base' theme */
+/* ---------------------------------------------------------------------------------------- */
+/* TMP during LESS convertion ---- to be deleted */
+/* may be required by SubstitutionRulesManager.css in inbox lib */
+/* ---------------------------------------------------------------------------------------- */
+/**
+  * This parameter is used in the Shell control to calculate the size when it grows.
+  * !!! ONLY PX-VALUES ARE ALLOWED HERE.
+  */
+/**
+  * This parameter is used in the Shell control to calculate the size of the margin when showing
+  * an overflow button in the right pane.
+  * !!! ONLY PX-VALUES ARE ALLOWED HERE.
+  */
+/* NotificationBar */
+/* The maximized height will be calculated corresponding to the window's height.*/
+/* ToolPopup */
+/* Telling the ToolPopup if it's inverted per default */
+/* transparent; */
+/* Global CSS for 'sap_mvi' theme */
+/* RatingIndicator                 */
+/* not in use right now
+
+@sapUiPurpleLight:    lighten(saturate(spin(@sapUiPurpleMedium,22),12),4);   // #ab218e;
+@sapUiPurpleMedium:   #812990;
+@sapUiPurpleDark:     darken(spin(@sapUiPurpleMedium,339),4);                // #52247f;
+
+@sapUiOrangeLight:    saturate(spin(@sapUiOrangeMedium,7),2);                // #f68b1f;
+@sapUiOrangeMedium:   #f37021;
+@sapUiOrangeDark:     darken(desaturate(spin(@sapUiOrangeMedium,349),26),6); // #cb4d2c;
+
+@sapUiGreenLight:     lighten(saturate(spin(@sapUiGreenMedium,337),12),5);   // #b1d34a;
+@sapUiGreenMedium:    #72bf44;
+@sapUiGreenDark:      darken(saturate(spin(@sapUiGreenMedium,48),51),24);    // #008a3b;
+
+@sapUiBlueLight:      lighten(spin(@sapUiBlueMedium,357),5);                 // #00a1e4;
+@sapUiBlueMedium:     #0083ca;
+@sapUiBlueDark:       darken(spin(@sapUiBlueMedium,9),12);                   // #004990;
+*/
+/* App                         */
+/* Animation ================================================================*/
+/* Nothing effect ==========================================================*/
+[startanimate='nothing'] {
+  -moz-animation: nothing 0.4s ease;
+  -webkit-animation: nothing 0.4s ease;
+  overflow: hidden;
+}
+@keyframes nothing {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-moz-keyframes nothing {
+  0% {
+    -moz-transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+@-webkit-keyframes nothing {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+/* Slide-in effect ==========================================================*/
+[startanimate='slidein'] {
+  -moz-animation: slidein 0.4s ease;
+  -webkit-animation: slidein 0.4s ease;
+  overflow: hidden;
+}
+@keyframes slidein {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-moz-keyframes slidein {
+  0% {
+    -moz-transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slidein {
+  0% {
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+/* Slide to view effect =====================================================*/
+[startanimate='slidetoleft'] {
+  -moz-animation: slidetoleft 0.4s ease;
+  -webkit-animation: slidetoleft 0.4s ease;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+@keyframes slidetoleft {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@-moz-keyframes slidetoleft {
+  0% {
+    -moz-transform: translateX(0%);
+  }
+  100% {
+    -moz-transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes slidetoleft {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+/* Slide-out effect =========================================================*/
+[startanimate='slideout'] {
+  -moz-animation: slideout 0.4s ease;
+  -webkit-animation: slideout 0.4s ease;
+  -moz-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+}
+@keyframes slideout {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@-moz-keyframes slideout {
+  0% {
+    -moz-transform: translateX(0%);
+  }
+  100% {
+    -moz-transform: translateX(100%);
+  }
+}
+@-webkit-keyframes slideout {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+  }
+}
+/* Slide to view effect =====================================================*/
+[startanimate='slidefromleft'] {
+  -moz-animation: slidefromleft 0.4s ease;
+  -webkit-animation: slidefromleft 0.4s ease;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+@keyframes slidefromleft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@-moz-keyframes slidefromleft {
+  0% {
+    -moz-transform: translateX(-100%);
+  }
+  100% {
+    -moz-transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slidefromleft {
+  0% {
+    -webkit-transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+/* Bounce-in effect =========================================================*/
+[startanimate='bouncein'] {
+  -moz-animation: bouncein 0.5s ease;
+  -webkit-animation: bouncein 0.5s ease;
+  overflow: hidden;
+}
+@keyframes bouncein {
+  40%,
+  70%,
+  90%,
+  100% {
+    transform: translateX(0%);
+    animation-timing-function: ease-in;
+  }
+  0% {
+    transform: translateX(100%);
+    animation-timing-function: ease-in;
+  }
+  55% {
+    transform: translateX(10%);
+    animation-timing-function: ease-in;
+  }
+  80% {
+    transform: translateX(3%);
+    animation-timing-function: ease-in;
+  }
+}
+@-moz-keyframes bouncein {
+  40%,
+  70%,
+  90%,
+  100% {
+    -moz-transform: translateX(0%);
+    -moz-animation-timing-function: ease-in;
+  }
+  0% {
+    -moz-transform: translateX(100%);
+    -moz-animation-timing-function: ease-in;
+  }
+  55% {
+    -moz-transform: translateX(10%);
+    -moz-animation-timing-function: ease-in;
+  }
+  80% {
+    -moz-transform: translateX(3%);
+    -moz-animation-timing-function: ease-in;
+  }
+}
+@-webkit-keyframes bouncein {
+  40%,
+  70%,
+  90%,
+  100% {
+    -webkit-transform: translateX(0%);
+    -webkit-animation-timing-function: ease-in;
+  }
+  0% {
+    -webkit-transform: translateX(100%);
+    -webkit-animation-timing-function: ease-in;
+  }
+  55% {
+    -webkit-transform: translateX(10%);
+    -webkit-animation-timing-function: ease-in;
+  }
+  80% {
+    -webkit-transform: translateX(3%);
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+/* Popout with bounce effect ================================================*/
+[startanimate='popout-bounce'] {
+  -moz-animation: popout-bounce 0.4s ease;
+  -webkit-animation: popout-bounce 0.4s ease;
+}
+@keyframes popout-bounce {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: scale(0.9);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+@-moz-keyframes popout-bounce {
+  0% {
+    -moz-transform: scale(0);
+  }
+  80% {
+    -moz-transform: scale(1);
+    -moz-animation-timing-function: ease-in;
+  }
+  90% {
+    -moz-transform: scale(0.9);
+    -moz-animation-timing-function: ease-out;
+  }
+  100% {
+    -moz-transform: scale(1);
+    -moz-animation-timing-function: ease-out;
+  }
+}
+@-webkit-keyframes popout-bounce {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(1);
+    -webkit-animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: scale(0.9);
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+  }
+}
+/* Popin with bounce effect =================================================*/
+[startanimate='popin-bounce'] {
+  -moz-animation: popin-bounce 0.2s ease;
+  -webkit-animation: popin-bounce 0.2s ease;
+}
+@keyframes popin-bounce {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    animation-timing-function: ease-out;
+  }
+}
+@-moz-keyframes popin-bounce {
+  0% {
+    -moz-transform: scale(1);
+  }
+  100% {
+    -moz-transform: scale(0);
+    -moz-animation-timing-function: ease-out;
+  }
+}
+@-webkit-keyframes popin-bounce {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+    -webkit-animation-timing-function: ease-out;
+  }
+}
+/* Pullup animation =========================================================*/
+[startanimate='pullup'] {
+  -moz-animation: pullup 0.8s ease;
+  -webkit-animation: pullup 0.8s ease;
+  -moz-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  border-bottom: 2px solid #282828;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 4px 4px #787878;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -moz-box-shadow: 4px 4px #787878;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -webkit-box-shadow: 4px 4px #787878;
+}
+@keyframes pullup {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(0);
+  }
+}
+@-moz-keyframes pullup {
+  0% {
+    -moz-transform: scaleY(1);
+  }
+  100% {
+    -moz-transform: scaleY(0);
+  }
+}
+@-webkit-keyframes pullup {
+  0% {
+    -webkit-transform: scaleY(1);
+  }
+  100% {
+    -webkit-transform: scaleY(0);
+  }
+}
+/* Slide in from bottom effect ==============================================*/
+[startanimate='slideinfrombottom'] {
+  -moz-animation: slideinfrombottom 0.8s ease;
+  -webkit-animation: slideinfrombottom 0.8s ease;
+  -moz-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+  position: absolute;
+}
+@keyframes slideinfrombottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@-moz-keyframes slideinfrombottom {
+  0% {
+    -moz-transform: translateY(100%);
+  }
+  100% {
+    -moz-transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slideinfrombottom {
+  0% {
+    -webkit-transform: translateY(100%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
+}
+/* Pulldown animation =======================================================*/
+[startanimate='pulldown'] {
+  -moz-animation: pulldown 0.8s ease;
+  -webkit-animation: pulldown 0.8s ease;
+  -moz-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  border-bottom: 2px solid #282828;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 4px 4px #787878;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -moz-box-shadow: 4px 4px #787878;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -webkit-box-shadow: 4px 4px #787878;
+}
+@keyframes pulldown {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@-moz-keyframes pulldown {
+  0% {
+    -moz-transform: scaleY(0);
+  }
+  100% {
+    -moz-transform: scaleY(1);
+  }
+}
+@-webkit-keyframes pulldown {
+  0% {
+    -webkit-transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+  }
+}
+/* Slide in from bottom effect ==============================================*/
+[startanimate='slideouttobottom'] {
+  -moz-animation: slideouttobottom 0.8s ease;
+  -webkit-animation: slideouttobottom 0.8s ease;
+  -moz-transform-origin: 100% 100%;
+  -webkit-transform-origin: 100% 100%;
+  position: absolute;
+}
+@keyframes slideouttobottom {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@-moz-keyframes slideouttobottom {
+  0% {
+    -moz-transform: translateY(0%);
+  }
+  100% {
+    -moz-transform: translateY(100%);
+  }
+}
+@-webkit-keyframes slideouttobottom {
+  0% {
+    -webkit-transform: translateY(0%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+  }
+}
+[startanimate='positioned'] {
+  -moz-animation: positioned 1s ease;
+  -webkit-animation: positioned 1s ease;
+  -moz-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  position: relative;
+  z-index: 1;
+}
+@keyframes positioned {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@-moz-keyframes positioned {
+  0% {
+    -moz-transform: scaleY(0);
+  }
+  100% {
+    -moz-transform: scaleY(1);
+  }
+}
+@-webkit-keyframes positioned {
+  0% {
+    -webkit-transform: scaleY(1);
+  }
+  80% {
+    -webkit-transform: scaleY(1);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+  }
+}
+/*Slide in from bottom effect*/
+[startanimate='slice'] {
+  -moz-animation: slice 1s ease;
+  -webkit-animation: slice 1s ease;
+  -webkit-transform-origin: 50% 0%;
+}
+@keyframes slice {
+  0% {
+    margin-bottom: 0%;
+  }
+  100% {
+    margin-bottom: 100%;
+  }
+}
+@-moz-keyframes slice {
+  0% {
+    margin-bottom: 0%;
+  }
+  100% {
+    margin-bottom: 100%;
+  }
+}
+@-webkit-keyframes slice {
+  0% {
+    margin-bottom: 0%;
+  }
+  80% {
+    -webkit-transform: scaleY(1);
+  }
+  100% {
+    margin-bottom: 100%;
+    -webkit-transform: scaleY(0);
+  }
+}
+/* Positioned effect ==========================================================*/
+[startanimate='positioned'] {
+  -moz-animation: positioned 1s ease;
+  -webkit-animation: positioned 1s ease;
+  -moz-transform-origin: 50% 0%;
+  -webkit-transform-origin: 50% 0%;
+  position: relative;
+  z-index: 1;
+}
+@keyframes positioned {
+  0% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@-moz-keyframes positioned {
+  0% {
+    -moz-transform: scaleY(1);
+  }
+  100% {
+    -moz-transform: scaleY(1);
+  }
+}
+@-webkit-keyframes positioned {
+  0% {
+    -webkit-transform: scaleY(1);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+  }
+}
+/* Slide in from bottom effect ==============================================*/
+[startanimate='slice'] {
+  -moz-animation: slice 1s ease;
+  -webkit-animation: slice 1s ease;
+}
+@keyframes slice {
+  0% {
+    margin-bottom: 0%;
+  }
+  100% {
+    margin-bottom: 100%;
+  }
+}
+@-moz-keyframes slice {
+  0% {
+    margin-bottom: 0%;
+  }
+  100% {
+    margin-bottom: 100%;
+  }
+}
+@-webkit-keyframes slice {
+  0% {
+    margin-bottom: 0%;
+  }
+  100% {
+    margin-bottom: 100%;
+  }
+}
+/* Flip-out animation =======================================================*/
+[startanimate='flipout'] {
+  -moz-animation: flip-out 0.2s ease;
+  -webkit-animation: flip-out 0.2s ease;
+}
+@keyframes flip-out {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+@-moz-keyframes flip-out {
+  0% {
+    -moz-transform: scaleX(1);
+  }
+  100% {
+    -moz-transform: scaleX(0);
+  }
+}
+@-webkit-keyframes flip-out {
+  0% {
+    -webkit-transform: scaleY(1);
+  }
+  100% {
+    -webkit-transform: scaleY(0);
+  }
+}
+/* Flip-in animation ========================================================*/
+[startanimate='flipin'] {
+  -moz-animation: flip-in 0.2s ease;
+  -webkit-animation: flip-in 0.2s ease;
+}
+@keyframes flip-in {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(-1);
+  }
+}
+@-moz-keyframes flip-in {
+  0% {
+    -moz-transform: scaleX(1);
+  }
+  100% {
+    -moz-transform: scaleX(-1);
+  }
+}
+@-webkit-keyframes flip-in {
+  0% {
+    -webkit-transform: scaleY(-1);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+  }
+}
+/* Pulsing animation ========================================================*/
+[startanimate='pulsating'] {
+  -moz-animation: pulsating 2s ease;
+  -webkit-animation: pulsating 2s ease;
+}
+@keyframes pulsating {
+  0%,
+  40%,
+  80% {
+    box-shadow: 4px 4px 6px #871111, -4px -4px 6px #871111, -4px 4px 6px #871111, 4px -4px 6px #871111;
+  }
+  20%,
+  60%,
+  100% {
+    box-shadow: 1px 1px 6px #871111, -1px -1px 6px #871111, -1px 1px 6px #871111, 1px -1px 6px #871111;
+  }
+}
+@-moz-keyframes pulsating {
+  0%,
+  40%,
+  80% {
+    -moz-box-shadow: 4px 4px 6px #871111, -4px -4px 6px #871111, -4px 4px 6px #871111, 4px -4px 6px #871111;
+  }
+  20%,
+  60%,
+  100% {
+    -moz-box-shadow: 1px 1px 6px #871111, -1px -1px 6px #871111, -1px 1px 6px #871111, 1px -1px 6px #871111;
+  }
+}
+@-webkit-keyframes pulsating {
+  0%,
+  40%,
+  80% {
+    -webkit-box-shadow: 4px 4px 6px #871111, -4px -4px 6px #871111, -4px 4px 6px #871111, 4px -4px 6px #871111;
+  }
+  20%,
+  60%,
+  100% {
+    -webkit-box-shadow: 1px 1px 6px #871111, -1px -1px 6px #871111, -1px 1px 6px #871111, 1px -1px 6px #871111;
+  }
+}
+/* panorama view*/
+@keyframes movingbox {
+  0% {
+    top: 300px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+@-moz-keyframes movingbox {
+  0% {
+    top: 300px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+@-webkit-keyframes movingbox {
+  0% {
+    top: 300px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+.tbm {
+  font-size: 12px;
+  font-family: Helvetica;
+}
+.tdm {
+  font-weight: bold;
+}
+.sl-body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  /*@ make overflow hidden working when height is 100%*/
+
+}
+.sl-band {
+  position: relative;
+  /*max-height: 100%;*/
+
+  text-align: left;
+  background-color: #FFFFFF;
+}
+.sl-band.AlternateRow:nth-child(even) {
+  background-color: #F7F7F7;
+}
+.sl-band.VBox > * {
+  display: block !important;
+}
+.sl-band.HBox > * {
+  display: inline-block;
+}
+.sl-groupbox {
+  overflow: hidden;
+  min-width: 4.5em;
+}
+.sl-groupbox > div {
+  width: 93%;
+  margin: 2%;
+  padding: 2%;
+  position: relative;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  /*-webkit-box-shadow: 2px 2px 5px #545e6c;
+  box-shadow: 2px 2px 5px #545e6c;
+  border-radius: 0px 0px 16px 0px;*/
+
+  border: #BFBFBF 2px solid;
+}
+.sl-groupbox > div > legend {
+  position: absolute;
+  left: 2%;
+  border-width: 2px 2px 0 2px;
+  border-style: solid;
+  border-color: #BFBFBF;
+  background: inherit;
+  padding: 2px 10px 0px 10px;
+  -webkit-border-radius: 6px 6px 0px 0px;
+  border-radius: 6px 6px 0px 0px;
+  font-size: 85%;
+}
+.sl-groupbox.VBox > div > * {
+  display: block;
+}
+.sl-groupbox.HBox > div > * {
+  display: inline-block;
+}
+.sl-panel {
+  display: inline-block;
+  vertical-align: top;
+}
+.sl-panel.NewRow {
+  display: block;
+}
+.sl-panel.VBox > * {
+  display: block;
+}
+.sl-panel.HBox > * {
+  display: inline-block;
+}
+.sl-dataview {
+  height: 100%;
+  position: relative;	/*required due to the scrollbar absolute positioning*/
+}
+.sl-dataview.Normal {
+  overflow: auto;
+}
+.sl-dataview.Smooth {
+  overflow: hidden;
+}
+.sl-dataview > div:first-child {
+  height: 100%;
+}
+.sl-dataview > div:first-child.sidescroll {
+  white-space: nowrap;
+}
+.sl-dataview > div:first-child.sidescroll > div {
+  display: inline-block;
+}
+.sl-dataview.Normal > div:first-child {
+  overflow: hidden;
+}
+.sl-dataview.Normal > div:first-child.sidescroll {
+  overflow: hidden;
+}
+.sl-scrollbar {
+  position: absolute;
+  z-index: 99;
+  background-color: #676767;
+  border-top: 1px solid #CDCDCD;
+  border-left: 1px solid #CDCDCD;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 2px 2px 4px #888888;
+  box-shadow: 2px 2px 4px #888888;
+}
+.sl-scrollbar.Vertical {
+  right: 3px;
+  width: 5px;
+}
+.sl-scrollbar.Horizontal {
+  bottom: 3px;
+  height: 5px;
+}
+.sl-busyindicator {
+  position: absolute;
+  height: auto;
+  width: auto;
+  left: 50%;
+  top: 45%;
+  /*if 0 would display outside*/
+
+  z-index: 10;
+}
+.sl-toast {
+  /* moved from theme files: sapMMT*/
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  font-family: inherit;
+  font-weight: normal;
+  word-wrap: break-word;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /*pointer-events: none;*/
+
+  background-color: #333333;
+  color: #ffffff;
+  padding: 1rem;
+  height: auto;
+  width: auto;
+  left: 50%;
+  bottom: 20%;
+}
+.sl-toast.show {
+  opacity: 0.9;
+  -webkit-transition: opacity ease 0.5s;
+  -moz-transition: opacity ease 0.5s;
+  transition: opacity ease 0.5s;
+  z-index: 99;
+}
+.sl-toast.hide {
+  opacity: 0.0;
+  -webkit-transition: opacity 1s ease 0s;
+  -moz-transition: opacity 1s ease 0s;
+  transition: opacity 1s ease 0s;
+  z-index: -1;
+}
+.sl-label {
+	box-sizing: border-box;
+	padding: 0.25rem;
+}
+.sl-label.WrapTexts {
+  white-space: normal;
+  overflow: auto;
+}
+.sl-textarea > textarea:focus {
+  outline: none;
+}
+.sl-checkbox > label {
+	max-width: 100%;	/*get text-overflow working*/
+}
+/* Shared CSS for 'base' theme */
+.sl-body {
+  /* .sapUiBody */
+
+  /*background-color: #f7f7f7;*/
+
+  color: #000000;
+  font-family: 'Helvetica Neue', Roboto, 'Droid Sans', 'BBGlobal Sans', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+  /* to prevent touch highlight on the entire body */
+
+}
+/* Shared CSS for 'sap_mvi' theme */
+.sl-body * {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+}
+.sl-body input,
+.sl-body textarea {
+  -webkit-user-select: text;
+  user-select: text;
+}
+.sap-android .sl-body,
+.sap-bb .sl-body {
+  /* .sapUiBody */
+
+  font-family: Roboto, 'Droid Sans', Helvetica, Arial;
+  color: #333333;
+}
+.sap-ios .sl-body {
+  /*.sapUiBody*/
+
+  font-family: 'Helvetica Neue', Roboto, 'Droid Sans', 'BBGlobal Sans', Helvetica, Arial, sans-serif;
+}
+.sap-bb .sl-body {
+  /*.sapUiBody*/
+
+  font-family: 'BBGlobal Sans', Helvetica, Arial;
+}
+.sap-winphone .sl-body {
+  /*.sapUiBody*/
+
+  font-family: Tahoma,Arial;
+}
+.sl-band.Repeat {
+  /*sapMLIB*/
+
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #dedede;
+}
+.sap-ios .sl-band.GroupHeaderTrailer {
+  /*.sapMListHdr*/
+
+  -webkit-box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  /* To improve readability Mobile Safari automatically increase the size of small text so let's disable this */
+
+  font-size: 0.75em;
+  line-height: 1.833em;
+  font-weight: bold;
+  background-color: #666666;
+  color: #ffffff;
+  text-shadow: 0 0.0833em 1px 0 #404040;
+  padding: 0 0.625rem;
+  background-image: -webkit-linear-gradient(top, #808080 0%, #666666 20%, #8c8c8c 100%);
+  -webkit-box-shadow: inset 0 0.0833em 0 #666666, inset 0 -0.0833em 0 #595959;
+}
+.sap-android .sl-band.GroupHeaderTrailer,
+.sap-bb .sl-band.GroupHeaderTrailer {
+  /*sapMListHdr*/
+
+  padding-left: 0.6875em;
+  line-height: 2.2857em;
+  font-size: 0.875em;
+  text-transform: uppercase;
+  color: #0060a7;
+  background-color: rgba(0, 124, 192, 0.1);
+  padding: 0 0.5rem;
+}
+/* ============================================= */
+/* CSS for control sap.m/Button.control */
+/* ============================================= */
+.sl-button {
+  /* sapMBtn */
+
+  -webkit-appearance: none;
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  cursor: pointer;
+  height: 2.75em;
+  line-height: 2.75em;
+  margin: .125em 0 .125em 0;
+  min-width: 2.75em;
+  padding: 0 .625em 0 .625em;
+  text-align: center;
+  -webkit-user-select: none;
+}
+.sl-button > span {
+  /* sapMBtnContent */
+
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+/* .sapMBtnContent > img {
+  margin: 0.35em 0.125em;
+  vertical-align: top;
+}
+.sapMBtnContentSpan {
+  margin-left: 0.313em;
+  margin-right: 0.313em;
+}
+.sapMBtnDisabled {
+  cursor: default;
+}
+*/
+/* ********* */
+/* MVI Theme */
+/* ********* */
+/*
+ * ----------------------------------------
+ * Button
+ * ----------------------------------------
+*/
+.sl-button {
+  /* sapMBtn */
+
+  -webkit-appearance: none;
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  cursor: pointer;
+  height: 2.75em;
+  line-height: 2.75em;
+  margin: .125em 0 .125em 0;
+  min-width: 2.75em;
+  padding: 0 .625em 0 .625em;
+  text-align: center;
+  -webkit-user-select: none;
+  border: none;
+  border-radius: .1em;
+  -webkit-border-radius: .1em;
+  color: #333333;
+  font-size: 1.0em;
+  height: 3.0em;
+  line-height: 3.0em;
+  background-color: #dedede;
+  box-shadow: inset 0 0.0625em 1px #ffffff, inset 0 0.0625em 1px #999999;
+  -webkit-box-shadow: inset 0 0.0625em 1px #ffffff, inset 0 0.0625em 1px #999999;
+}
+.sl-button:focus {
+  outline: none;
+}
+/* .sapMBtnCustomIcon {
+  height: 2.0em;
+} */
+.sl-button:active,
+.sl-button.active {
+  /* sapMBtnActive */
+
+  background-color: #0089d4;
+  color: #ffffff;
+  box-shadow: inset 0 0.0625em 1px #3ba0d7, inset 0 0.0625em 1px #007197;
+  -webkit-box-shadow: inset 0 0.0625em 1px #3ba0d7, inset 0 0.0625em 1px #007197;
+}
+.sl-button.disabled {
+  /* .sapMBtnDisabled,
+.sapMBtnDisabled:active,
+.sapMBtnBackDisabled,
+.sapMBtnBackDisabled:active,
+.sapMBtnUpDisabled,
+.sapMBtnUpDisabled:active {
+ */
+
+  background-color: #f6f6f6;
+  color: #333333;
+  /* color: lighten(@sapUiText,20); */
+
+  cursor: default;
+  box-shadow: inset 0 0.0625em 1px #ebebeb, inset 0 0.0625em 1px #999999;
+  -webkit-box-shadow: inset 0 0.0625em 1px #ebebeb, inset 0 0.0625em 1px #999999;
+}
+/* .sapMBtnUp {
+  min-width: 1.25em;
+}
+.sapMBtnTransparent {
+  background: transparent;
+  color: #333333;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+} */
+/*
+ * ----------------------------------------
+ * Button [iOS]
+ * ----------------------------------------
+*/
+.sap-ios .sl-button {
+  border: solid 0.2px #999999;
+  /* #999   TODO: maybe need border colors for here? */
+
+  border-radius: 0.625em;
+  -webkit-border-radius: 0.625em;
+  font-weight: bold;
+  height: 2.75em;
+  line-height: 2.75em;
+  text-shadow: 0 0.0625em 0 #ffffff;
+  /* moved from sapMBtnDefault */
+
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #f0f0f0 100%);
+  box-shadow: inset 0 0.0625em 1px #d6d6d6, inset 0 0.0625em 1px #f0f0f0;
+  -webkit-box-shadow: inset 0 0.0625em 1px #d6d6d6, inset 0 0.0625em 1px #f0f0f0;
+}
+.sap-ios .sl-button.Accept {
+  /* .sapMBtnAccept */
+
+  background-image: -webkit-linear-gradient(top, #0086cf 0%, #0072b1 65%, #0060a7 100%);
+  color: #ffffff;
+  text-shadow: 0 0.0625em 0 #7a7a7a;
+  box-shadow: inset 0 0.0625em 1px #3bbaff, inset 0 0.0625em 1px #004469;
+  -webkit-box-shadow: inset 0 0.0625em 1px #3bbaff, inset 0 0.0625em 1px #004469;
+}
+.sap-ios .sl-button.Reject {
+  /* .sapMBtnReject */
+
+  background-image: -webkit-linear-gradient(top, #b21212 0%, #7f0d0d 65%, #7f0d0d 100%);
+  color: #ffffff;
+  text-shadow: 0 0.0625em 0 #7a7a7a;
+  box-shadow: inset 0 0.0625em 1px #e92727, inset 0 0.0625em 1px #9b1010;
+  -webkit-box-shadow: inset 0 0.0625em 1px #e92727, inset 0 0.0625em 1px #9b1010;
+}
+.sap-ios .sl-button:active,
+.sap-ios .sl-button.active {
+  background-image: -webkit-linear-gradient(top, #005897 0%, #0060a7 65%, #0072b1 100%);
+  color: #ffffff;
+  text-shadow: 0 0.0625em 0 #7a7a7a;
+  box-shadow: inset 0 0.0625em 1px #005897, inset 0 0.0625em 1px #002b4b;
+  -webkit-box-shadow: inset 0 0.0625em 1px #005897, inset 0 0.0625em 1px #002b4b;
+}
+.sap-ios .sl-button.disabled,
+.sap-ios .sl-button.disabled:active {
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #f0f0f0 65%, #dedede 100%);
+  color: #808080;
+  text-shadow: 0 0.0625em 0 #c7c7c7;
+  box-shadow: inset 0 0.0625em 1px #d6d6d6, inset 0 0.0625em 1px #d6d6d6;
+  -webkit-box-shadow: inset 0 0.0625em 1px #d6d6d6, inset 0 0.0625em 1px #d6d6d6;
+}
+/* .sap-ios .sapMBtnBack {
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #f0f0f0 100%);
+  -webkit-border-top-left-radius: 0.625em 0.9375em;
+  -webkit-border-bottom-left-radius: 0.625em 0.9375em;
+  margin-left: 1.0em;
+  box-shadow: inset 0 0.0625em 1px #d6d6d6, inset 0 0.0625em 1px #f0f0f0;
+  -webkit-box-shadow: inset 0 0.0625em 1px #d6d6d6, inset 0 0.0625em 1px #f0f0f0;
+}
+.sap-ios .sapMBtnBack:before {
+  background-image: -webkit-linear-gradient(top right, #ffffff 0%, #f0f0f0 100%);
+  border: solid 0.2px #999999;
+  -webkit-border-top-right-radius: 6.25em 2.5em;
+  -webkit-border-top-left-radius: 1.875em 0.125em;
+  -webkit-border-bottom-right-radius: 0.125em 1.875em;
+  -webkit-border-bottom-left-radius: 2.5em 6.25em;
+  float: left;
+  content: "";
+  display: block;
+  height: 2.125em;
+  margin-left: -2.375em;
+  padding: 0;
+  width: 2.375em;
+  box-shadow: inset 0 0.0625em 1px #d6d6d6, inset 0 0.0625em 1px #f0f0f0;
+  -webkit-box-shadow: inset 0 0.0625em 1px #d6d6d6, inset 0 0.0625em 1px #f0f0f0;
+  -webkit-transform: translate(1em, 0.3em) rotate(-45deg) skew(-10deg, -10deg);
+  -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(#000000), color-stop(0.5, #000000), color-stop(0.5, transparent), to(transparent));
+}
+.sap-ios .sapMBtnBack:active:before {
+  background-image: -webkit-linear-gradient(top right, #005897 0%, #0060a7 65%, #0072b1 100%);
+  box-shadow: inset 0 0.0625em 1px #005897, inset 0 0.0625em 1px #002b4b;
+  -webkit-box-shadow: inset 0 0.0625em 1px #005897, inset 0 0.0625em 1px #002b4b;
+}
+.sap-ios .sapMBtnBackDisabled,
+.sap-ios .sapMBtnBackDisabled:active {
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #f0f0f0 65%, #dedede 100%);
+  color: #808080;
+  -webkit-border-top-left-radius: 0.625em 0.9375em;
+  -webkit-border-bottom-left-radius: 0.625em 0.9375em;
+  cursor: default;
+  margin-left: 1.0em;
+  text-shadow: 0 0.0625em 0 #c7c7c7;
+  box-shadow: inset 0 0.0625em 1px #d6d6d6, inset 0 0.0625em 1px #d6d6d6;
+  -webkit-box-shadow: inset 0 0.0625em 1px #d6d6d6, inset 0 0.0625em 1px #d6d6d6;
+}
+.sap-ios .sapMBtnBackDisabled:before {
+  background-image: -webkit-linear-gradient(top right, #ffffff 0%, #f0f0f0 65%, #dedede 100%);
+  border: solid 0.2px #666666;
+  -webkit-border-top-right-radius: 6.25em 2.5em;
+  -webkit-border-top-left-radius: 1.875em 0.125em;
+  -webkit-border-bottom-right-radius: 0.125em 1.875em;
+  -webkit-border-bottom-left-radius: 2.5em 6.25em;
+  float: left;
+  content: "";
+  display: block;
+  height: 2.125em;
+  margin-left: -2.385em;
+  padding: 0;
+  width: 2.375em;
+  box-shadow: inset 0 0.0625em 1px #d6d6d6, inset 0 0.0625em 1px #d6d6d6;
+  -webkit-box-shadow: inset 0 0.0625em 1px #d6d6d6, inset 0 0.0625em 1px #d6d6d6;
+  -webkit-transform: translate(1em, 0.3em) rotate(-45deg) skew(-10deg, -10deg);
+  -webkit-mask-image: -webkit-gradient(linear, left top, right bottom, from(#000000), color-stop(0.5, #000000), color-stop(0.5, transparent), to(transparent));
+}
+.sap-ios .sapMBtnUp {
+  background-image: -webkit-linear-gradient(top, #ffffff 0%, #f0f0f0 100%);
+  border: solid 0.2px #666666;
+  border-radius: 0.625em;
+  -webkit-border-radius: 0.625em;
+  font-weight: bold;
+  box-shadow: inset 0 0.0625em 1px #d6d6d6, inset 0 0.0625em 1px #f0f0f0;
+  -webkit-box-shadow: inset 0 0.0625em 1px #d6d6d6, inset 0 0.0625em 1px #f0f0f0;
+} */
+/* ============================================= */
+/* CSS for control sap.m/Label.control */
+/* ============================================= */
+.sl-label {
+  color: #000000;
+  font-size: 16px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.sl-label.Bold {
+  font-weight: bold;
+}
+/* ============================================= */
+/* CSS for control sap.m/Label.control */
+/* ============================================= */
+.sap-android .sl-label,
+.sap-bb .sl-label {
+  color: #333333;
+}
+/* ============================================= */
+/* moved from CSS for control sap.m/GrowingList.control */
+/* ============================================= */
+.sl-image {
+  /* sapMImg */
+
+  border: none;
+  /* fix the highlight color on tap*/
+
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.sl-image.NoImg {
+  /* sapMNoImg */
+
+  visibility: hidden;
+}
+/* fix chrome browser yellow border on focus problem*/
+.sl-image:focus {
+  outline: none;
+}
+/* ============================================= */
+/* CSS for control sap.m/Input.control */
+/* ============================================= */
+.sl-input,
+.sl-input > input {
+  /* sapMInput, sapMInputInner */
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font: inherit;
+  /*@ avoid applying UA stylesheet to block*/
+
+  display: inline-block;
+}
+.sl-input.disabled {
+  /* sapMInputDisabled */
+
+  opacity: 0.3;
+  pointer-events: none;
+  /* disable touch events */
+
+}
+/* ********* */
+/* MVI Theme */
+/* ********* */
+/* ********* */
+/*  Common   */
+/* ********* */
+/* until we fix the flexbox problem of InputListItem we shrink the width */
+/*@media all and (max-width: 400px) {
+  .sapMILI-CTX > .sapMInput {
+    max-width: 160px;
+  }
+}
+@media all and (max-width: 300px) {
+  .sapMILI-CTX > .sapMInput {
+    max-width: 120px;
+  }
+}*/
+.sl-input > * {
+  width: 100%;
+  /* fit the parents(sapMInput) width */
+
+}
+/* ********* */
+/*   i O S   */
+/* ********* */
+.sap-ios .sl-input {
+  border: 0.07143em solid #999999;
+  -webkit-border-radius: 0.3571em;
+  border-radius: 0.3571em;
+  -webkit-box-shadow: 0 -0.07143em 0 #545e6c, inset 0 0.1429em 0.1429em #cccccc;
+  box-shadow: 0 -0.07143em 0 #545e6c, inset 0 0.1429em 0.1429em #cccccc;
+  padding: 0;
+  min-width: 2.75em;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+}
+.sap-ios .sl-input > input {
+  /*sapMInputInner*/
+
+  border: none;
+  padding: 0.43em 0.86em 0.43em 0.86em;
+  -webkit-appearance: none;
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  position: relative;
+}
+.sap-ios .sl-input > input:focus {
+  outline: none;
+  outline-width: 0;
+}
+.sap-ios .sl-input.Warning {
+  /* sapMInputWarning */
+
+  background-color: #fffcb5;
+}
+.sap-ios .sl-input.Error {
+  /* sapMInputError */
+
+  border-color: #b21212;
+  background: url(../img/alert.png) no-repeat #ffffff right center;
+  background-size: 1.875em 1.875em;
+}
+.sap-ios .sl-input.Error .sl-input > input {
+  /* .sapMInputError .sapMInputInner */
+
+  padding-right: 2em;
+}
+/* ********************** */
+/*   a n d r o i d & bb   */
+/* ********************** */
+.sap-android .sl-input,
+.sap-bb .sl-input {
+  /*sapMInputBase*/
+
+  position: relative;
+  display: inline-block;
+  border: none;
+  font-size: 0.875rem;
+  min-width: 2.75em;
+}
+.sap-android .sl-input > input,
+.sap-bb .sl-input > input {
+  /*sapMInputBaseInner*/
+
+  background-color: transparent;
+  color: #333333;
+  border: none;
+  padding: 0.5em 0.571em 0.143em 0.571em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  height: 2.143em;
+  /* Date has somehow different height so lets set all same */
+
+}
+.sap-android .sl-input::before,
+.sap-bb .sl-input::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.284em;
+  border: 0.072em solid #999999;
+  border-top: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sap-android .sl-input.Error::before,
+.sap-bb .sl-input.Error::before {
+  border-color: #b21212;
+}
+.sap-android .sl-input > input:focus,
+.sap-bb .sl-input > input:focus {
+  outline: none;
+}
+.sap-android .sl-input.Warning,
+.sap-bb .sl-input.Warning {
+  background-color: #fffcb5;
+}
+/* ====================================== */
+/* CSS for control sap.m/Textarea.control */
+/* uses sapMInputBase styles 			  */
+/* ====================================== */
+.sl-textarea,
+.sl-textarea > textarea {
+  /* copied from .sapMInputBase,.sapMInputBaseInner */
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font: inherit;
+  /*copied from sapMInputBaseCursor*/
+
+  cursor: text;
+}
+.sl-textarea > textarea {
+  /*sapMTextAreaInner*/
+
+  line-height: 1.6em;
+  overflow: auto;
+  /* overwrite sapMInputBase styles */
+
+  /*@ moved from html[class*="sap-"] textarea.sapMInputBaseInner*/
+
+  height: auto;
+  resize: none;
+  width: auto;
+}
+/* ********************** */
+/*   a n d r o i d & bb   */
+/* ********************** */
+.sap-android .sl-textarea,
+.sap-bb .sl-textarea {
+  /*@ copied from sapMInputBase*/
+
+  position: relative;
+  display: inline-block;
+  border: none;
+  font-size: 0.875rem;
+  min-width: 2.75em;
+}
+.sap-android .sl-textarea > textarea,
+.sap-bb .sl-textarea > textarea {
+  /*@ copied from sapMInputBaseInner*/
+
+  background-color: transparent;
+  color: #333333;
+  border: none;
+  padding: 0.5em 0.571em 0.143em 0.571em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  /* Date has somehow different height so lets set all same */
+
+  /*@ moved from textarea.sapMInputBaseInner*/
+
+  /* transform is blocking scroll for android so disable it */
+
+  -webkit-transform: none;
+}
+.sap-android .sl-textarea::before,
+.sap-bb .sl-textarea::before {
+  /*copied from .sap-android .sapMInputBase::before, .sap-bb .sapMInputBase::before*/
+
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.284em;
+  border: 0.072em solid #999999;
+  border-top: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*.sapMTextAreaReadOnly {
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}*/
+/* ********* */
+/*   i O S   */
+/* ********* */
+.sap-ios .sl-textarea {
+  /*@ copied from sapMInputBase*/
+
+  border: 0.07143em solid #999999;
+  -webkit-border-radius: 0.3571em;
+  border-radius: 0.3571em;
+  -webkit-box-shadow: 0 -0.07143em 0 #545e6c, inset 0 0.1429em 0.1429em #cccccc;
+  box-shadow: 0 -0.07143em 0 #545e6c, inset 0 0.1429em 0.1429em #cccccc;
+  padding: 0;
+  min-width: 2.75em;
+  background-color: #ffffff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+}
+.sap-ios .sl-textarea > textarea {
+  /*@ copied from sapMInputBaseInner*/
+
+  border: none;
+  padding: 0.43em 0.86em 0.43em 0.86em;
+  -webkit-appearance: none;
+  background-color: transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  position: relative;
+}
+/* ======================================= */
+/* CSS for control sap.m/Select.control    */
+/* ======================================= */
+/*
+ * [ANDROID|iOS] Select commons
+ */
+.sl-select {
+  /* sapMSlt */
+
+  position: relative;
+  display: inline-block;
+  visibility: hidden;
+  /*@ moved from style */
+
+  width: auto;
+  max-width: 100%;
+}
+.sl-select,
+.sl-select > select {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sl-select.disabled {
+  /*sapMSltDisabled*/
+
+  opacity: 0.3;
+  pointer-events: none;
+}
+.sl-select.Visible {
+  /* sapMSltVisible  */
+
+  visibility: inherit;
+}
+.sl-select > label {
+  /* .sapMSlt > .sapMSltText */
+
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+  text-indent: 0;
+  text-align: left;
+  -webkit-user-select: none;
+}
+.sl-select > select {
+  -webkit-appearance: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  border: none;
+  margin: 0;
+  width: auto;
+}
+.sl-select > select,
+.sl-select > select > option {
+  font: inherit;
+}
+.sl-select > input {
+  display: none;
+  /*hide the input created form bluecrystal theme*/
+
+}
+/* ********************************************** */
+/* CSS for control sap.m/Select.control MVI Theme */
+/* ********************************************** */
+/*
+ * [iOS] Select
+ */
+.sap-ios .sl-select {
+  border: 0.0625em solid #999999;
+  /* #999 */
+
+  -webkit-border-radius: 0.3125em;
+  border-radius: 0.3125em;
+  -webkit-box-shadow: 0 -0.07143em 0 #545e6c, inset 0 0.1429em 0.1429em #cccccc;
+  /* #55606F #CCC */
+
+  box-shadow: 0 -0.07143em 0 #545e6c, inset 0 0.1429em 0.1429em #cccccc;
+  margin: 0.4375em 0 0.4375em 0;
+  height: 1.875em;
+}
+.sap-ios .sl-select > select {
+  top: -0.571em;
+  height: 2.446em;
+}
+/* label */
+.sap-ios .sl-select > label {
+  /* sapMSltText */
+
+  font-size: 0.875em;
+  padding: 0 0.5em 0 0.5em;
+  line-height: 2em;
+  color: #333333;
+  width: auto;
+  /*@ moved from JS*/
+
+}
+/*
+ * [ANDROID] Select
+ */
+.sap-android .sl-select,
+.sap-bb .sl-select {
+  padding: 0 0.250em 0.3125em 0.125em;
+  /*margin: 0.5em 0 0.5em 0;*/
+
+}
+.sap-android .sl-select,
+.sap-android .sl-select > select,
+.sap-bb .sl-select,
+.sap-bb .sl-select > select {
+  background-color: transparent;
+}
+.sap-android .sl-select > select,
+.sap-bb .sl-select > select {
+  text-indent: 0.625em;
+  height: 2.375em;
+  top: -0.5em;
+}
+/* text */
+.sap-android .sl-select > label,
+.sap-bb .sl-select > label {
+  height: 1.625em;
+  padding: 0 1.5em 0 0.625em;
+  border-bottom: 0.0625em solid #999999;
+  /* #999 */
+
+  line-height: 1.8125em;
+}
+/* icon */
+.sap-android .sl-select > span,
+.sap-bb .sl-select > span {
+  display: block;
+  border-right: 0.75em solid #999999;
+  /* #666 */
+
+  border-top: 0.75em solid transparent;
+  position: absolute;
+  width: 0;
+  bottom: 0.37em;
+  height: 0;
+  right: 0.25em;
+}
+/* pressed */
+.sap-android .sl-select.pressed:not(.disabled),
+.sap-bb .sl-select.pressed:not(.disabled) {
+  background-color: #009ed4;
+  /* #00A3D7 */
+
+}
+.sap-android .sl-select.pressed:not(.disabled) > label,
+.sap-bb .sl-select.pressed:not(.disabled) > label {
+  border: none;
+  color: #ffffff;
+  /* #FFF */
+
+}
+.sap-android .sl-select.pressed:not(.disabled) > span,
+.sap-bb .sl-select.pressed:not(.disabled) > span {
+  border-right: 0.75em solid #ffffff;
+  /* #FFF */
+
+  border-top: 0.75em solid transparent;
+}
+/* mobiscroll */
+/*.sap-android .sapMSltInput,
+.sap-bb .sapMSltInput {
+  display: none;
+}*/
+/* ============================================= */
+/* CSS for control sap.m/CheckBox.control */
+/* ============================================= */
+.sl-checkbox {
+  /*sapMCb*/
+
+  display: inline-block;
+  position: relative;
+}
+.sl-checkbox > div {
+  /*sapMCbBg*/
+
+  height: 2em;
+  width: 2em;
+  position: relative;
+  display: inline-block;
+  top: 0.7em;
+}
+.sl-checkbox > div > input {
+  /*sapMCbMark*/
+
+  font-size: inherit;
+}
+.sl-checkbox > div > input.checked:before {
+  /*.sapMCbMark.sapMCbMarkChecked*/
+
+  content: "\2714";
+}
+/*.sapMLIB-CTX .sapMCb {
+  height: 3em;
+  width: 3em;
+}
+.sapMLIB-CTX .sapMCbBg {
+  top: 0.5em;
+  left: 0.5em;
+}*/
+/*.sapMCbBg:active > .sapMCbMark:active*/
+/*.sapMCbBg:focus > .sapMCbMark*/
+.sl-checkbox > div:focus,
+.sl-checkbox > div:focus > input,
+.sl-checkbox > div:active > input:active,
+.sl-checkbox > div > input:focus {
+  /*sapMCbMark*/
+
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  outline: none;
+}
+@font-face {
+  font-family: 'ios-icons';
+  src: url('fonts/ios-icons.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'android-icons';
+  src: url('fonts/android-icons.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+.sl-checkbox > div > input {
+  /*.sapMCbBg > .sapMCbMark*/
+
+  height: 1em;
+  width: 1em;
+  border: solid 1px #999999;
+  margin: 0.5em;
+  -webkit-appearance: none;
+  -webkit-focus-ring-color: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.sl-checkbox > div.disabled > input {
+  /*.sapMCbBg.sapMCbBgDis > .sapMCbMark*/
+
+  border: solid 1px rgba(153, 153, 153, 0.5);
+}
+/*.sapMActive .sapMCbBg.sapMCbActiveStateOff > .sapMCbMark.sapMCbMarkChecked:before,*/
+/*.sapMCbBg:active.sapMCbActiveStateOff > .sapMCbMark.sapMCbMarkChecked:before,*/
+.sl-checkbox > div > input.checked:before {
+  /*.sapMCbBg > .sapMCbMark.sapMCbMarkChecked*/
+
+  font-family: "android-icons";
+  text-shadow: 0 -1px 0 #009ed4;
+  font-size: 24px;
+  line-height: 1em;
+  color: #0060a7;
+  position: relative;
+  top: -17px;
+  left: 3px;
+  -webkit-text-stroke: 4px rgba(0, 162, 207, 0.3);
+}
+/*.sapMActive .sapMCbBg > .sapMCbMark.sapMCbMarkChecked:before,*/
+.sl-checkbox > div:active > input.checked:before {
+  /*.sapMCbBg:active > .sapMCbMark.sapMCbMarkChecked*/
+
+  text-shadow: none;
+  color: #000000;
+  -webkit-text-stroke: 4px rgba(0, 0, 0, 0.5);
+}
+.sl-checkbox > div.disabled > input.checked:before {
+  /*.sapMCbBg.sapMCbBgDis > .sapMCbMark.sapMCbMarkChecked*/
+
+  text-shadow: none;
+  color: rgba(0, 0, 0, 0.5);
+  -webkit-text-stroke: 4px rgba(0, 0, 0, 0.1);
+}
+/*.sapMActive .sapMCbBg {*/
+.sl-checkbox > div:active {
+  background-color: rgba(0, 144, 212, 0.5);
+}
+/*.sapMCbBg:active.sapMCbActiveStateOff,*/
+/*.sapMActive .sapMCbBg.sapMCbActiveStateOff,*/
+/*.sapMActive .sapMCbBg.sapMCbBgDis*/.sl-checkbox > div.disabled:active {
+  background-color: transparent;
+}
+/*.sap-ios .sapMLIB-CTX .sapMCb {
+  height: 2.75em;
+  width: 2.75em;
+}*/
+.sap-ios .sl-checkbox > div {
+  /*sapMCbBg*/
+
+  padding: 0.3125em;
+  height: 1.375em;
+  width: 1.375em;
+  top: 0.65em;
+}
+/*.sap-ios .sapMLIB-CTX .sapMCbBg {
+  top: 0.375em;
+  left: 0.375em;
+}*/
+/*.sap-ios .sapMActive.sapMCbBg {
+  background-color: transparent;
+}*/
+.sap-ios .sl-checkbox > div:active,
+.sap-ios .sl-checkbox > div > input {
+  display: block;
+  height: 1.125em;
+  width: 1.125em;
+  border: solid 2px #666666;
+  border-radius: 0.5625em;
+  margin: 0.125em;
+}
+.sap-ios .sl-checkbox > div.disabled > input {
+  /*.sapMCbBg.sapMCbBgDis > .sapMCbMark*/
+
+  border: solid 2px rgba(102, 102, 102, 0.3);
+}
+.sap-ios .sl-checkbox > div > input.checked {
+  /*.sapMCbMark.sapMCbMarkChecked*/
+
+  height: 1.375em;
+  width: 1.375em;
+  border-radius: 0.6875em;
+  margin: 0;
+  border-color: #ffffff;
+  box-shadow: 0 0 0.1875em #333333;
+  background-image: -webkit-radial-gradient(center, #006baa 50%, #4d9cc7 54%);
+  background-size: 4em 4em;
+  background-position: -1.375em -0.125em;
+  font-family: "ios-icons";
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.125em;
+}
+/*.sap-ios .sapMActive .sapMCbBg > .sapMCbMark.sapMCbMarkChecked:before,*/
+/*.sapMCbMark.sapMCbMarkChecked*/
+.sap-ios .sl-checkbox > div:active > input.checked:before,
+.sap-ios .sl-checkbox > div > input.checked:before {
+  font-family: "ios-icons";
+  content: "\2713";
+  text-shadow: 0 -1px 0 #244a5f;
+  color: #ffffff;
+  -webkit-text-stroke: 0;
+  top: -7px;
+  left: 0px;
+  font-size: 7px;
+}
+.sap-ios .sl-checkbox > div.disabled > input.checked {
+  border-color: #ffffff;
+  box-shadow: 0 0 0.1875em rgba(51, 51, 51, 0.3);
+  background-image: -webkit-radial-gradient(center, rgba(0, 107, 170, 0.3) 50%, rgba(77, 156, 199, 0.3) 54%);
+  color: #ffffff;
+}
+.sap-ios .sl-checkbox > div.disabled > input.checked:before {
+  text-shadow: 0 -1px 0 rgba(36, 74, 95, 0.3);
+  color: rgba(255, 255, 255, 0.3);
+  -webkit-text-stroke: 0;
+}
+/* ========================================== */
+/* CSS for sap.m/MessageToast.class MVI Theme */
+/* ========================================== */
+/* =========== */
+/* Commons CSS */
+/* =========== */
+.sl-toast {
+  padding: 0.625em;
+  background-color: #000000;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(51, 51, 51, 0.9)), to(#333333));
+  background: -webkit-linear-gradient(rgba(51, 51, 51, 0.9), #333333);
+  background: linear-gradient(rgba(51, 51, 51, 0.9), #333333);
+  background-repeat: no-repeat;
+  text-shadow: 0 0.0625em #000000;
+  color: #ffffff;
+  -webkit-box-shadow: 0 0.125em 2.75em 0.125em rgba(0, 0, 0, 0.5), 0 0.25em 0.25em 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.125em 2.75em 0.125em rgba(0, 0, 0, 0.5), 0 0.25em 0.25em 0 rgba(0, 0, 0, 0.15);
+}
+/* ================= */
+/* iOS MessageToast  */
+/* ================= */
+.sap-ios .sl-toast {
+  border-radius: 0.3125em;
+}
+/* ============================================= */
+/* CSS for controlsap.m/BusyIndicator.control    */
+/* ============================================= */
+/*sapMBusyIndicator*/
+/*.sapMBusyIndicatorLight,
+.sapMBusyIndicatorDark*/.sl-busyindicator {
+  display: inline-block;
+  vertical-align: middle;
+}
+.sl-busyindicator > label {
+  /*sapMBsyIndLabel*/
+
+  vertical-align: middle;
+  padding-left: .5em;
+}
+/*.sapMBsyIndIcon {
+  vertical-align: middle;
+  transform: rotate(0deg) translateZ(0);
+  transition-duration: 0ms;
+  animation-name: sapMBsyIndRotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-transform: rotate(0deg) translateZ(0);
+  -webkit-transition-duration: 0ms;
+  -webkit-animation-name: sapMBsyIndRotate;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -ms-transform: rotate(0deg) translateZ(0);
+  -ms-transition-duration: 0ms;
+  -ms-animation-name: sapMBsyIndRotate;
+  -ms-animation-duration: 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+}
+@keyframes sapMBsyIndRotate {
+  from {
+    transform: rotate(0deg) translateZ(0);
+  }
+  to {
+    transform: rotate(360deg) translateZ(0);
+  }
+}
+@-webkit-keyframes sapMBsyIndRotate {
+  from {
+    -webkit-transform: rotate(0deg) translateZ(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateZ(0);
+  }
+}*/
+.sl-spinner {
+  /*sapMSpinner*/
+
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+}
+/*.sapMSpin {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}*/
+/* =============================================== */
+/* CSS for control sap.m/BusyIndicator.control     */
+/* MVI theme                                       */
+/* =============================================== */
+/*************************
+Android / BlackBerry specific styling
+**************************/
+@-webkit-keyframes sapMBsyIndRotateRight {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes sapMBsyIndRotateLeft {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+/*sapMSpinner*/
+.sap-bb .sl-spinner,
+.sap-android .sl-spinner {
+  width: 48px;
+  height: 48px;
+}
+/*sapMBsyIndLabel*/
+.sap-bb .sl-busyindicator > label,
+.sap-android .sl-busyindicator > label {
+  height: 3em;
+  line-height: 3em;
+}
+.sap-bb div.sl-spinner div,
+.sap-android div.sl-spinner div {
+  position: relative;
+}
+/*sapMSpinBar1*/
+.sap-bb .sl-spinner div.sl-spinbar1,
+.sap-android .sl-spinner div.sl-spinbar1 {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(0.15, rgba(26, 26, 26, 0.2)), color-stop(1, transparent));
+  background: -webkit-linear-gradient(right, rgba(115, 115, 115, 0.2) 15%, transparent 100%);
+  background: linear-gradient(right, rgba(115, 115, 115, 0.2) 15%, transparent 100%);
+  border-radius: 9999px 9999px 0 0;
+  -webkit-transform-origin: 50% 100%;
+  -webkit-animation-name: sapMBsyIndRotateRight;
+  -webkit-animation-duration: 1.3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+.sap-bb .sl-spinner div.sl-spinbar2,
+.sap-android .sl-spinner div.sl-spinbar2 {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: -webkit-gradient(linear, right top, left bottom, color-stop(0.2, transparent), color-stop(0.95, rgba(26, 26, 26, 0.4)));
+  background: -webkit-linear-gradient(right, transparent 10%, rgba(26, 26, 26, 0.4) 95%);
+  background: linear-gradient(right, transparent 10%, rgba(26, 26, 26, 0.4) 95%);
+  border-radius: 9999px 9999px 0 0;
+  -webkit-transform-origin: 50% 100%;
+  -webkit-animation-name: sapMBsyIndRotateLeft;
+  -webkit-animation-duration: 1.7s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+.sap-bb .sl-spinner div.sl-spinbar3,
+.sap-android .sl-spinner div.sl-spinbar3 {
+  position: absolute;
+  width: 87%;
+  height: 87%;
+  left: 50%;
+  top: 50%;
+  visibility: hidden;
+}
+.sap-bb .sl-spinner div.sl-spinbar4,
+.sap-android .sl-spinner div.sl-spinbar4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: -50%;
+  top: -50%;
+  visibility: visible;
+  border-radius: 9999px;
+}
+/*************************
+*	iOS specific styling
+**************************/
+@-webkit-keyframes sapMSpinBarFade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+.sap-ios .sl-spinner {
+  width: 30px;
+  height: 30px;
+}
+.sap-ios .sl-spinner > label {
+  /*sapMBsyIndLabel*/
+
+  height: 2.75em;
+  line-height: 2.75em;
+}
+.sap-ios div.sl-spinner div {
+  position: absolute;
+  width: 24%;
+  height: 7%;
+  top: 50%;
+  left: 50%;
+  background-color: #000000;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-animation: opacity 0s linear infinite;
+  -webkit-animation: sapMSpinBarFade 1s linear infinite;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+/*.sap-ios .sapMBar-CTX div.sapMSpinner div {
+  background-color: #ffffff;
+}
+.sap-ios .sapMBusyIndicatorDark div.sapMSpinner div {
+  background-color: #000000;
+}
+.sap-ios .sapMBusyIndicatorLight div.sapMSpinner div {
+  background-color: #ffffff;
+}*/
+.sap-ios .sl-spinner div.sl-spinbar1 {
+  -webkit-transform-origin: 0% 50%;
+  -webkit-transform: rotate(0deg) translate(83%, 0%);
+  -webkit-animation-delay: -0.999s;
+}
+.sap-ios .sl-spinner div.sl-spinbar2 {
+  -webkit-transform-origin: 0% 50%;
+  -webkit-transform: rotate(30deg) translate(83%, 0%);
+  -webkit-animation-delay: -0.9167s;
+}
+.sap-ios .sl-spinner div.sl-spinbar3 {
+  -webkit-transform-origin: 0% 50%;
+  -webkit-transform: rotate(60deg) translate(83%, 0%);
+  -webkit-animation-delay: -0.833s;
+}
+.sap-ios .sl-spinner div.sl-spinbar4 {
+  -webkit-transform-origin: 0% 50%;
+  -webkit-transform: rotate(90deg) translate(83%, 0%);
+  -webkit-animation-delay: -0.75s;
+}
+.sap-ios .sl-spinner div.sl-spinbar5 {
+  -webkit-transform-origin: 0% 50%;
+  -webkit-transform: rotate(120deg) translate(83%, 0%);
+  -webkit-animation-delay: -0.667s;
+}
+.sap-ios .sl-spinner div.sl-spinbar6 {
+  -webkit-transform-origin: 0% 50%;
+  -webkit-transform: rotate(150deg) translate(83%, 0%);
+  -webkit-animation-delay: -0.5833s;
+}
+.sap-ios .sl-spinner div.sl-spinbar7 {
+  -webkit-transform-origin: 0% 50%;
+  -webkit-transform: rotate(180deg) translate(83%, 0%);
+  -webkit-animation-delay: -0.5s;
+}
+.sap-ios .sl-spinner div.sl-spinbar8 {
+  -webkit-transform-origin: 0% 50%;
+  -webkit-transform: rotate(210deg) translate(83%, 0%);
+  -webkit-animation-delay: -0.41667s;
+}
+.sap-ios .sl-spinner div.sl-spinbar9 {
+  -webkit-transform-origin: 0% 50%;
+  -webkit-transform: rotate(240deg) translate(83%, 0%);
+  -webkit-animation-delay: -0.333s;
+}
+.sap-ios .sl-spinner div.sl-spinbar10 {
+  -webkit-transform-origin: 0% 50%;
+  -webkit-transform: rotate(270deg) translate(83%, 0%);
+  -webkit-animation-delay: -0.25s;
+}
+.sap-ios .sl-spinner div.sl-spinbar11 {
+  -webkit-transform-origin: 0% 50%;
+  -webkit-transform: rotate(300deg) translate(83%, 0%);
+  -webkit-animation-delay: -0.1667s;
+}
+.sap-ios .sl-spinner div.sl-spinbar12 {
+  -webkit-transform-origin: 0% 50%;
+  -webkit-transform: rotate(330deg) translate(83%, 0%);
+  -webkit-animation-delay: -0.0833s;
+}
+.sapMBtn span.sapBtnBadgeSpan,
+.sapMBtnContent span.sapBtnBadgeSpan {
+  padding: 3px;
+  position: absolute;
+  top: 6px;
+  line-height: 12px;
+  font-size: 12px;
+  color: yellow;
+  background-color: red;
+  border-radius: 6px;
+  box-shadow: 3px 3px 5px #888888;
+  z-index: 1;
+}
+div.sapTabBar {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.sap-ios div.sapTabBar .sapMBar {
+  box-shadow: inset 0 0;
+}
+.sap-ios div.sapTabBar .sapMBar-CTX .sapMBtn.sapMBtnActive {
+  background: white;
+  color: #666666;
+  height: 37px;
+  margin-top: 0px;
+  box-shadow: inset 0 -2px 2px #888888;
+  border-radius: 0 0 0.3125em 0.3125em;
+}

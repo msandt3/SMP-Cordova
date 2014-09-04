@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<library xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>sap.apb</name>
+	<vendor>sap</vendor>
+	<version>1.14.0</version>
+
+	<documentation>UI5 Wrapper for AppBuilder</documentation>
+
+<dependencies>
+	<dependency>
+		<libraryName>sap.ui.core</libraryName>
+	</dependency>
+</dependencies>
+</library>

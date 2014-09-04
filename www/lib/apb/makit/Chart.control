@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>Chart</name>
+	<author>SAP AG</author>
+
+	<documentation>MAKit Chart</documentation>
+
+	<baseType>sap.ui.core/Control</baseType>
+	<properties>
+		<property group="Appearance" name="type" type="ChartType" defaultValue="Column">
+			<documentation>Chart type.</documentation>
+		</property>
+		<property group="Misc" name="categorySortOrder" type="SortOrder" defaultValue="None">
+			<documentation>Sort order for category. If None, the category's column is expected to be pre-sorted.</documentation>
+		</property>
+		<property name="dataSource" type="sap.ui.core/string">
+			<documentation>dataSource name of the chart.</documentation>
+		</property>
+		<property group="Dimension" name="height" type="sap.ui.core/CSSSize" defaultValue="100%">
+			<documentation>The height of the Chart.</documentation>
+		</property>
+		
+		<property group="Appearance" name="legendPosition" type="LegendPosition" defaultValue="None">
+			<documentation>Legend position all chart types except Bar chart. Bar chart only support Bottom position.</documentation>
+		</property>
+		<property group="Appearance" name="lineThickness" type="sap.ui.core/float" defaultValue="1">
+			<documentation>Specify the line thickness of the line graph. Only applies to Line chart type.</documentation>
+		</property>
+		<property group="Misc" name="maxSliceCount" type="sap.ui.core/int" defaultValue="12">
+			<documentation>Set the maximum number of slices in a Pie/Donut chart. If exceeding the specified value, the rest will be categorised into a single slice. Only applies to Pie/Donut.</documentation>
+		</property>
+		<property name="metadataFile" type="sap.ui.core/URI">
+			<documentation>Metadata file URI that is assigned to this chart. Metadata is mandatory for a chart to be rendered because it contains the chart's details.</documentation>
+		</property>
+		<property group="Appearance" name="showRangeSelector" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>Specify whether the range selector should be visible.</documentation>
+		</property>
+		<property group="Appearance" name="showTableView" type="sap.ui.core/boolean" defaultValue="false">
+			<documentation>Toggle to display table view.</documentation>
+		</property>
+		<property group="Appearance" name="showTableValue" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>Toggle to display the table value on a Bar chart. Only applies to Bar chart.</documentation>
+		</property>
+		<property group="Appearance" name="showToolbar" type="sap.ui.core/boolean" defaultValue="true">
+			<documentation>Show or hide the chart's toolbar.</documentation>
+		</property>
+		<property group="Dimension" name="width" type="sap.ui.core/CSSSize" defaultValue="100%">
+			<documentation>The width of the Chart.</documentation>
+		</property>
+	</properties>
+	<events>
+		<event name="doubletap">
+			<documentation>Double tap event on chart.</documentation>
+		</event>
+		<event name="tap">
+			<documentation>Single tap event on the chart.</documentation>
+		</event>
+	</events>
+	<methods>
+		<method name="getSelectedCategory" type="sap.ui.core/string">
+			<documentation>Get the value of the currently highlighted category.</documentation>
+		</method>
+		<method name="getSelectedSeries" type="sap.ui.core/string">
+			<documentation>Get the value of the currently highlighted series.</documentation>
+		</method>
+		<method name="getNumberOfCategories" type="sap.ui.core/int">
+			<documentation>Get the number of distinct category values.</documentation>
+		</method>
+		<method name="refreshData" type="sap.ui.core/void">
+			<documentation>Re-retrieve data from the datasource and re-render chart.</documentation>
+		</method>
+	</methods>
+</control>

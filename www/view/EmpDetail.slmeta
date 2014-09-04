@@ -1,0 +1,110 @@
+{
+	"TransitionEffect": "pulldown",
+	"Content": [
+		{
+			"Type": "ListView",
+			"StyleClass": "",
+			"ID": "EmpDetail",
+			"DataTable": {
+				"Content": [
+					{
+						"Name": "empid",
+						"DataType": "number",
+						"Path": "/empid",
+						"Type": "Column"
+					},
+					{
+						"Name": "fname",
+						"DataType": "string",
+						"Path": "/fname",
+						"Type": "Column"
+					},
+					{
+						"Name": "lname",
+						"DataType": "string",
+						"Path": "/lname",
+						"Type": "Column"
+					},
+					{
+						"Name": "Gender",
+						"DataType": "string",
+						"Path": "/Gender",
+						"Type": "Column"
+					},
+					{
+						"Name": "sdate",
+						"DataType": "string",
+						"Path": "/sdate",
+						"Type": "Column"
+					},
+					{
+						"Name": "salary",
+						"DataType": "string",
+						"Path": "/salary",
+						"Type": "Column"
+					},
+					{
+						"Name": "status",
+						"DataType": "string",
+						"Path": "/status",
+						"Type": "Column"
+					}
+				],
+				"Url": "file.Employees",
+				"SourceType": "File",
+				"navigationParameters": ""
+			},
+			"DetailBand": {
+				"StyleClass": "",
+				"Alignment": "Vertical",
+				"Content": [
+					{
+						"Type": "Panel",
+						"StyleClass": "",
+						"ID": "listPanel1",
+						"Alignment": "Horizontal",
+						"Content": [
+							{
+								"Type": "Image",
+								"Url": "'img\\employee_48.jpg'",
+								"Width": "20%",
+								"StyleClass": "'left-image'",
+								"ID": "empImage"
+							},
+							{
+								"Type": "Panel",
+								"StyleClass": "'sl-panel mainPanel'",
+								"ID": "listPanel2",
+								"Alignment": "Vertical",
+								"Content": [
+									{
+										"Type": "Label",
+										"Text": "fname + ' ' + lname",
+										"StyleClass": "'list-line1'",
+										"ID": "empName"
+									},
+									{
+										"Type": "Label",
+										"Text": "if(Gender == 0, 'Male','Female'))",
+										"StyleClass": "'list-line2'",
+										"ID": "gender"
+									},
+									{
+										"Type": "Label",
+										"Text": "if(status==0,'Active'),(if(status==1,'On Leave','Former Employee')))",
+										"StyleClass": "if(status==0,'Act',(if(status==1,'Lea','Ter')))",
+										"ID": "status"
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"SummaryBand": {
+				"StyleClass": "",
+				"Alignment": "Vertical"
+			}
+		}
+	]
+}

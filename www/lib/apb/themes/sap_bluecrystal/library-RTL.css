@@ -1,0 +1,1788 @@
+/*!
+ * SAP UI development toolkit for HTML5 (SAPUI5)
+ *
+ * (c) Copyright 2009-2012 SAP AG. All rights reserved
+ */
+/* Global CSS for 'base' theme */
+/* ---------------------------------------------------------------------------------------- */
+/* TMP during LESS convertion ---- to be deleted */
+/* may be required by SubstitutionRulesManager.css in inbox lib */
+/* ---------------------------------------------------------------------------------------- */
+/** 
+  * This parameter is used in the Shell control to calculate the size when it grows.
+  * !!! ONLY PX-VALUES ARE ALLOWED HERE. 
+  */
+/** 
+  * This parameter is used in the Shell control to calculate the size of the margin when showing
+  * an overflow button in the right pane.
+  * !!! ONLY PX-VALUES ARE ALLOWED HERE.
+  */
+/* NotificationBar */
+/* The maximized height will be calculated corresponding to the window's height.*/
+/* ToolPopup */
+/* Telling the ToolPopup if it's inverted per default */
+/* transparent; */
+/* Animation ================================================================*/
+/* Nothing effect ==========================================================*/
+[startanimate='nothing'] {
+  -moz-animation: nothing 0.4s ease;
+  -webkit-animation: nothing 0.4s ease;
+  overflow: hidden;
+}
+@keyframes nothing {
+  0% {
+    transform:scale(1);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+@-moz-keyframes nothing {
+  0% {
+    -moz-transform:scale(1);
+  }
+  100% {
+    -moz-transform:scale(1);
+  }
+}
+@-webkit-keyframes nothing {
+  0% {
+    -webkit-transform:scale(1);
+  }
+  100% {
+    -webkit-transform:scale(1);
+  }
+}
+/* Slide-in effect ==========================================================*/
+[startanimate='slidein'] {
+  -moz-animation: slidein 0.4s ease;
+  -webkit-animation: slidein 0.4s ease;
+  overflow: hidden;
+}
+@keyframes slidein {
+  0% {
+    transform:translateX(100%);
+  }
+  100% {
+    transform:translateX(0%);
+  }
+}
+@-moz-keyframes slidein {
+  0% {
+    -moz-transform:translateX(100%);
+  }
+  100% {
+    -moz-transform:translateX(0%);
+  }
+}
+@-webkit-keyframes slidein {
+  0% {
+    -webkit-transform:translateX(100%);
+  }
+  100% {
+    -webkit-transform:translateX(0%);
+  }
+}
+/* Slide to view effect =====================================================*/
+[startanimate='slidetoleft'] {
+  -moz-animation: slidetoleft 0.4s ease;
+  -webkit-animation: slidetoleft 0.4s ease;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+@keyframes slidetoleft {
+  0% {
+    transform:translateX(0%);
+  }
+  100% {
+    transform:translateX(-100%);
+  }
+}
+@-moz-keyframes slidetoleft {
+  0% {
+    -moz-transform:translateX(0%);
+  }
+  100% {
+    -moz-transform:translateX(-100%);
+  }
+}
+@-webkit-keyframes slidetoleft {
+  0% {
+    -webkit-transform:translateX(0%);
+  }
+  100% {
+    -webkit-transform:translateX(-100%);
+  }
+}
+/* Slide-out effect =========================================================*/
+[startanimate='slideout'] {
+  -moz-animation: slideout 0.4s ease;
+  -webkit-animation: slideout 0.4s ease;
+  -moz-transform-origin:0% 100%;
+  -webkit-transform-origin:0% 100%;
+}
+@keyframes slideout {
+  0% {
+    transform:translateX(0%);
+  }
+  100% {
+    transform:translateX(100%);
+  }
+}
+@-moz-keyframes slideout {
+  0% {
+    -moz-transform:translateX(0%);
+  }
+  100% {
+    -moz-transform:translateX(100%);
+  }
+}
+@-webkit-keyframes slideout {
+  0% {
+    -webkit-transform:translateX(0%);
+  }
+  100% {
+    -webkit-transform:translateX(100%);
+  }
+}
+/* Slide to view effect =====================================================*/
+[startanimate='slidefromleft'] {
+  -moz-animation: slidefromleft 0.4s ease;
+  -webkit-animation: slidefromleft 0.4s ease;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+@keyframes slidefromleft {
+  0% {
+    transform:translateX(-100%);
+  }
+  100% {
+    transform:translateX(0%);
+  }
+}
+@-moz-keyframes slidefromleft {
+  0% {
+    -moz-transform:translateX(-100%);
+  }
+  100% {
+    -moz-transform:translateX(0%);
+  }
+}
+@-webkit-keyframes slidefromleft {
+  0% {
+    -webkit-transform:translateX(-100%);
+  }
+  100% {
+    -webkit-transform:translateX(0%);
+  }
+}
+/* Bounce-in effect =========================================================*/
+[startanimate='bouncein'] {
+  -moz-animation: bouncein 0.5s ease;
+  -webkit-animation: bouncein 0.5s ease;
+  overflow: hidden;
+}
+@keyframes bouncein {
+  40%,
+  70%,
+  90%,
+  100% {
+    transform:translateX(0%);
+    animation-timing-function: ease-in;
+  }
+  0% {
+    transform:translateX(100%);
+    animation-timing-function: ease-in;
+  }
+  55% {
+    transform:translateX(10%);
+    animation-timing-function: ease-in;
+  }
+  80% {
+    transform:translateX(3%);
+    animation-timing-function: ease-in;
+  }
+}
+@-moz-keyframes bouncein {
+  40%,
+  70%,
+  90%,
+  100% {
+    -moz-transform:translateX(0%);
+    -moz-animation-timing-function: ease-in;
+  }
+  0% {
+    -moz-transform:translateX(100%);
+    -moz-animation-timing-function: ease-in;
+  }
+  55% {
+    -moz-transform:translateX(10%);
+    -moz-animation-timing-function: ease-in;
+  }
+  80% {
+    -moz-transform:translateX(3%);
+    -moz-animation-timing-function: ease-in;
+  }
+}
+@-webkit-keyframes bouncein {
+  40%,
+  70%,
+  90%,
+  100% {
+    -webkit-transform:translateX(0%);
+    -webkit-animation-timing-function: ease-in;
+  }
+  0% {
+    -webkit-transform:translateX(100%);
+    -webkit-animation-timing-function: ease-in;
+  }
+  55% {
+    -webkit-transform:translateX(10%);
+    -webkit-animation-timing-function: ease-in;
+  }
+  80% {
+    -webkit-transform:translateX(3%);
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+/* Popout with bounce effect ================================================*/
+[startanimate='popout-bounce'] {
+  -moz-animation: popout-bounce 0.4s ease;
+  -webkit-animation: popout-bounce 0.4s ease;
+}
+@keyframes popout-bounce {
+  0% {
+    transform:scale(0);
+  }
+  80% {
+    transform:scale(1);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform:scale(0.9);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform:scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+@-moz-keyframes popout-bounce {
+  0% {
+    -moz-transform:scale(0);
+  }
+  80% {
+    -moz-transform:scale(1);
+    -moz-animation-timing-function: ease-in;
+  }
+  90% {
+    -moz-transform:scale(0.9);
+    -moz-animation-timing-function: ease-out;
+  }
+  100% {
+    -moz-transform:scale(1);
+    -moz-animation-timing-function: ease-out;
+  }
+}
+@-webkit-keyframes popout-bounce {
+  0% {
+    -webkit-transform:scale(0);
+  }
+  80% {
+    -webkit-transform:scale(1);
+    -webkit-animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform:scale(0.9);
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform:scale(1);
+    -webkit-animation-timing-function: ease-out;
+  }
+}
+/* Popin with bounce effect =================================================*/
+[startanimate='popin-bounce'] {
+  -moz-animation: popin-bounce 0.2s ease;
+  -webkit-animation: popin-bounce 0.2s ease;
+}
+@keyframes popin-bounce {
+  0% {
+    transform:scale(1);
+  }
+  100% {
+    transform:scale(0);
+    animation-timing-function: ease-out;
+  }
+}
+@-moz-keyframes popin-bounce {
+  0% {
+    -moz-transform:scale(1);
+  }
+  100% {
+    -moz-transform:scale(0);
+    -moz-animation-timing-function: ease-out;
+  }
+}
+@-webkit-keyframes popin-bounce {
+  0% {
+    -webkit-transform:scale(1);
+  }
+  100% {
+    -webkit-transform:scale(0);
+    -webkit-animation-timing-function: ease-out;
+  }
+}
+/* Pullup animation =========================================================*/
+[startanimate='pullup'] {
+  -moz-animation: pullup 0.8s ease;
+  -webkit-animation: pullup 0.8s ease;
+  -moz-transform-origin:50% 0%;
+  -webkit-transform-origin:50% 0%;
+  border-bottom: 2px solid #282828;
+  border-radius:4px 4px 4px 4px;
+  box-shadow:-4px 4px #787878;
+  -moz-border-radius:4px 4px 4px 4px;
+  -moz-box-shadow:-4px 4px #787878;
+  -webkit-border-radius:4px 4px 4px 4px;
+  -webkit-box-shadow:-4px 4px #787878;
+}
+@keyframes pullup {
+  0% {
+    transform:scaleY(1);
+  }
+  100% {
+    transform:scaleY(0);
+  }
+}
+@-moz-keyframes pullup {
+  0% {
+    -moz-transform:scaleY(1);
+  }
+  100% {
+    -moz-transform:scaleY(0);
+  }
+}
+@-webkit-keyframes pullup {
+  0% {
+    -webkit-transform:scaleY(1);
+  }
+  100% {
+    -webkit-transform:scaleY(0);
+  }
+}
+/* Slide in from bottom effect ==============================================*/
+[startanimate='slideinfrombottom'] {
+  -moz-animation: slideinfrombottom 0.8s ease;
+  -webkit-animation: slideinfrombottom 0.8s ease;
+  -moz-transform-origin:0% 100%;
+  -webkit-transform-origin:0% 100%;
+  position: absolute;
+}
+@keyframes slideinfrombottom {
+  0% {
+    transform:translateY(100%);
+  }
+  100% {
+    transform:translateY(0%);
+  }
+}
+@-moz-keyframes slideinfrombottom {
+  0% {
+    -moz-transform:translateY(100%);
+  }
+  100% {
+    -moz-transform:translateY(0%);
+  }
+}
+@-webkit-keyframes slideinfrombottom {
+  0% {
+    -webkit-transform:translateY(100%);
+  }
+  100% {
+    -webkit-transform:translateY(0%);
+  }
+}
+/* Pulldown animation =======================================================*/
+[startanimate='pulldown'] {
+  -moz-animation: pulldown 0.8s ease;
+  -webkit-animation: pulldown 0.8s ease;
+  -moz-transform-origin:50% 0%;
+  -webkit-transform-origin:50% 0%;
+  border-bottom: 2px solid #282828;
+  border-radius:4px 4px 4px 4px;
+  box-shadow:-4px 4px #787878;
+  -moz-border-radius:4px 4px 4px 4px;
+  -moz-box-shadow:-4px 4px #787878;
+  -webkit-border-radius:4px 4px 4px 4px;
+  -webkit-box-shadow:-4px 4px #787878;
+}
+@keyframes pulldown {
+  0% {
+    transform:scaleY(0);
+  }
+  100% {
+    transform:scaleY(1);
+  }
+}
+@-moz-keyframes pulldown {
+  0% {
+    -moz-transform:scaleY(0);
+  }
+  100% {
+    -moz-transform:scaleY(1);
+  }
+}
+@-webkit-keyframes pulldown {
+  0% {
+    -webkit-transform:scaleY(0);
+  }
+  100% {
+    -webkit-transform:scaleY(1);
+  }
+}
+/* Slide in from bottom effect ==============================================*/
+[startanimate='slideouttobottom'] {
+  -moz-animation: slideouttobottom 0.8s ease;
+  -webkit-animation: slideouttobottom 0.8s ease;
+  -moz-transform-origin:0% 100%;
+  -webkit-transform-origin:0% 100%;
+  position: absolute;
+}
+@keyframes slideouttobottom {
+  0% {
+    transform:translateY(0%);
+  }
+  100% {
+    transform:translateY(100%);
+  }
+}
+@-moz-keyframes slideouttobottom {
+  0% {
+    -moz-transform:translateY(0%);
+  }
+  100% {
+    -moz-transform:translateY(100%);
+  }
+}
+@-webkit-keyframes slideouttobottom {
+  0% {
+    -webkit-transform:translateY(0%);
+  }
+  100% {
+    -webkit-transform:translateY(100%);
+  }
+}
+[startanimate='positioned'] {
+  -moz-animation: positioned 1s ease;
+  -webkit-animation: positioned 1s ease;
+  -moz-transform-origin:50% 0%;
+  -webkit-transform-origin:50% 0%;
+  position: relative;
+  z-index: 1;
+}
+@keyframes positioned {
+  0% {
+    transform:scaleY(0);
+  }
+  100% {
+    transform:scaleY(1);
+  }
+}
+@-moz-keyframes positioned {
+  0% {
+    -moz-transform:scaleY(0);
+  }
+  100% {
+    -moz-transform:scaleY(1);
+  }
+}
+@-webkit-keyframes positioned {
+  0% {
+    -webkit-transform:scaleY(1);
+  }
+  80% {
+    -webkit-transform:scaleY(1);
+  }
+  100% {
+    -webkit-transform:scaleY(1);
+  }
+}
+/*Slide in from bottom effect*/
+[startanimate='slice'] {
+  -moz-animation: slice 1s ease;
+  -webkit-animation: slice 1s ease;
+  -webkit-transform-origin:50% 0%;
+}
+@keyframes slice {
+  0% {
+    margin-bottom: 0%;
+  }
+  100% {
+    margin-bottom: 100%;
+  }
+}
+@-moz-keyframes slice {
+  0% {
+    margin-bottom: 0%;
+  }
+  100% {
+    margin-bottom: 100%;
+  }
+}
+@-webkit-keyframes slice {
+  0% {
+    margin-bottom: 0%;
+  }
+  80% {
+    -webkit-transform:scaleY(1);
+  }
+  100% {
+    margin-bottom: 100%;
+    -webkit-transform:scaleY(0);
+  }
+}
+/* Positioned effect ==========================================================*/
+[startanimate='positioned'] {
+  -moz-animation: positioned 1s ease;
+  -webkit-animation: positioned 1s ease;
+  -moz-transform-origin:50% 0%;
+  -webkit-transform-origin:50% 0%;
+  position: relative;
+  z-index: 1;
+}
+@keyframes positioned {
+  0% {
+    transform:scaleY(1);
+  }
+  100% {
+    transform:scaleY(1);
+  }
+}
+@-moz-keyframes positioned {
+  0% {
+    -moz-transform:scaleY(1);
+  }
+  100% {
+    -moz-transform:scaleY(1);
+  }
+}
+@-webkit-keyframes positioned {
+  0% {
+    -webkit-transform:scaleY(1);
+  }
+  100% {
+    -webkit-transform:scaleY(1);
+  }
+}
+/* Slide in from bottom effect ==============================================*/
+[startanimate='slice'] {
+  -moz-animation: slice 1s ease;
+  -webkit-animation: slice 1s ease;
+}
+@keyframes slice {
+  0% {
+    margin-bottom: 0%;
+  }
+  100% {
+    margin-bottom: 100%;
+  }
+}
+@-moz-keyframes slice {
+  0% {
+    margin-bottom: 0%;
+  }
+  100% {
+    margin-bottom: 100%;
+  }
+}
+@-webkit-keyframes slice {
+  0% {
+    margin-bottom: 0%;
+  }
+  100% {
+    margin-bottom: 100%;
+  }
+}
+/* Flip-out animation =======================================================*/
+[startanimate='flipout'] {
+  -moz-animation: flip-out 0.2s ease;
+  -webkit-animation: flip-out 0.2s ease;
+}
+@keyframes flip-out {
+  0% {
+    transform:scaleX(1);
+  }
+  100% {
+    transform:scaleX(0);
+  }
+}
+@-moz-keyframes flip-out {
+  0% {
+    -moz-transform:scaleX(1);
+  }
+  100% {
+    -moz-transform:scaleX(0);
+  }
+}
+@-webkit-keyframes flip-out {
+  0% {
+    -webkit-transform:scaleY(1);
+  }
+  100% {
+    -webkit-transform:scaleY(0);
+  }
+}
+/* Flip-in animation ========================================================*/
+[startanimate='flipin'] {
+  -moz-animation: flip-in 0.2s ease;
+  -webkit-animation: flip-in 0.2s ease;
+}
+@keyframes flip-in {
+  0% {
+    transform:scaleX(1);
+  }
+  100% {
+    transform:scaleX(-1);
+  }
+}
+@-moz-keyframes flip-in {
+  0% {
+    -moz-transform:scaleX(1);
+  }
+  100% {
+    -moz-transform:scaleX(-1);
+  }
+}
+@-webkit-keyframes flip-in {
+  0% {
+    -webkit-transform:scaleY(-1);
+  }
+  100% {
+    -webkit-transform:scaleY(1);
+  }
+}
+/* Pulsing animation ========================================================*/
+[startanimate='pulsating'] {
+  -moz-animation: pulsating 2s ease;
+  -webkit-animation: pulsating 2s ease;
+}
+@keyframes pulsating {
+  0%,
+  40%,
+  80% {
+    box-shadow:-4px 4px 6px #871111,4px -4px 6px #871111,4px 4px 6px #871111,-4px -4px 6px #871111;
+  }
+  20%,
+  60%,
+  100% {
+    box-shadow:-1px 1px 6px #871111,1px -1px 6px #871111,1px 1px 6px #871111,-1px -1px 6px #871111;
+  }
+}
+@-moz-keyframes pulsating {
+  0%,
+  40%,
+  80% {
+    -moz-box-shadow:-4px 4px 6px #871111,4px -4px 6px #871111,4px 4px 6px #871111,-4px -4px 6px #871111;
+  }
+  20%,
+  60%,
+  100% {
+    -moz-box-shadow:-1px 1px 6px #871111,1px -1px 6px #871111,1px 1px 6px #871111,-1px -1px 6px #871111;
+  }
+}
+@-webkit-keyframes pulsating {
+  0%,
+  40%,
+  80% {
+    -webkit-box-shadow:-4px 4px 6px #871111,4px -4px 6px #871111,4px 4px 6px #871111,-4px -4px 6px #871111;
+  }
+  20%,
+  60%,
+  100% {
+    -webkit-box-shadow:-1px 1px 6px #871111,1px -1px 6px #871111,1px 1px 6px #871111,-1px -1px 6px #871111;
+  }
+}
+/* panorama view*/
+@keyframes movingbox {
+  0% {
+    top: 300px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+@-moz-keyframes movingbox {
+  0% {
+    top: 300px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+@-webkit-keyframes movingbox {
+  0% {
+    top: 300px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+.tbm {
+  font-size: 12px;
+  font-family: Helvetica;
+}
+.tdm {
+  font-weight: bold;
+}
+.sl-body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  /*@ make overflow hidden working when height is 100%*/
+
+}
+.sl-band {
+  position: relative;
+  /*max-height: 100%;*/
+
+  text-align: left;
+  background-color: #FFFFFF;
+}
+.sl-band.AlternateRow:nth-child(even) {
+  background-color: #F7F7F7;
+}
+.sl-band.VBox > * {
+  display: block !important;
+}
+.sl-band.HBox > * {
+  display: inline-block;
+}
+.sl-groupbox {
+  overflow: hidden;
+  min-width: 4.5em;
+}
+.sl-groupbox > div {
+  width: 93%;
+  margin: 2%;
+  padding: 1%;
+  position: relative;
+  background-repeat: no-repeat;
+  -webkit-box-shadow:-2px 2px 5px #545e6c;
+  box-shadow:-2px 2px 5px #545e6c;
+  /*border-radius: 0px 0px 16px 0px;*/
+
+  border: #BFBFBF 2px solid;
+}
+.sl-groupbox > div > legend {
+  position: absolute;
+  right: 2%;
+  border-width:2px 2px 0 2px;
+  border-style: solid;
+  border-color: #BFBFBF;
+  background: inherit;
+  padding:2px 10px 0px 10px;
+  -webkit-border-radius:6px 6px 0px 0px;
+  border-radius:6px 6px 0px 0px;
+  font-size: 85%;
+}
+.sl-groupbox.VBox > div > * {
+  display: block;
+}
+.sl-groupbox.HBox > div > * {
+  display: inline-block;
+}
+.sl-panel {
+  display: inline-block;
+  vertical-align: top;
+}
+.sl-panel.NewRow {
+  display: block;
+}
+.sl-panel.VBox > * {
+  display: block;
+}
+.sl-panel.HBox > * {
+  display: inline-block;
+}
+.sl-dataview {
+  height: 100%;
+}
+.sl-dataview.Normal {
+  overflow: auto;
+}
+.sl-dataview.Smooth {
+  overflow: hidden;
+}
+.sl-dataview > div:first-child {
+  height: 100%;
+}
+.sl-dataview > div:first-child.sidescroll {
+  white-space: nowrap;
+}
+.sl-dataview > div:first-child.sidescroll > div {
+  display: inline-block;
+}
+.sl-dataview.Normal > div:first-child {
+  overflow: hidden;
+}
+.sl-dataview.Normal > div:first-child.sidescroll {
+  overflow: hidden;
+}
+.sl-scrollbar {
+  position: absolute;
+  z-index: 99;
+  background-color: #676767;
+  border-top: 1px solid #CDCDCD;
+  border-right: 1px solid #CDCDCD;
+  -webkit-border-radius:2px;
+  border-radius:2px;
+  -webkit-box-shadow:-2px 2px 4px #888888;
+  box-shadow:-2px 2px 4px #888888;
+}
+.sl-scrollbar.Vertical {
+  left: 3px;
+  width: 5px;
+}
+.sl-scrollbar.Horizontal {
+  bottom: 3px;
+  height: 5px;
+}
+.sl-busyindicator {
+  position: absolute;
+  height: auto;
+  width: auto;
+  right: 50%;
+  top: 45%;
+  /*if 0 would display outside*/
+
+  z-index: 10;
+}
+.sl-toast {
+  /* moved from theme files: sapMMT*/
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  font-family: inherit;
+  font-weight: normal;
+  word-wrap: break-word;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  /*pointer-events: none;*/
+
+  background-color: #333333;
+  color: #ffffff;
+  padding: 1rem;
+  height: auto;
+  width: auto;
+  right: 50%;
+  bottom: 20%;
+}
+.sl-toast.show {
+  opacity: 0.9;
+  -webkit-transition: opacity ease 0.5s;
+  -moz-transition: opacity ease 0.5s;
+  transition: opacity ease 0.5s;
+  z-index: 99;
+}
+.sl-toast.hide {
+  opacity: 0.0;
+  -webkit-transition: opacity 1s ease 0s;
+  -moz-transition: opacity 1s ease 0s;
+  transition: opacity 1s ease 0s;
+  z-index: -1;
+}
+.sl-label.WrapTexts {
+  white-space: normal;
+  overflow: auto;
+}
+.sl-textarea > textarea:focus {
+  outline: none;
+}
+/* Shared CSS for 'base' theme */
+.sl-body {
+  /* .sapUiBody */
+
+  background-color: #f2f2f2;
+  color: #000000;
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+  /* to prevent touch highlight on the entire body */
+
+}
+/* Shared CSS for 'sap_bluecrystal' theme */
+.sl-body * {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+.sl-body input,
+.sl-body textarea {
+  /* [contenteditable=true] */
+
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+/* FONTS */
+.sl-body {
+  /* .sapUiBody */
+
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  font-family: 'OpenSans-Regular', sans-serif;
+  /*moved from sapMGlobalBackgroundColor*/
+
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 124, 192, 0.2) 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(100%, rgba(0, 124, 192, 0.2)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 124, 192, 0.2) 100%);
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.3) 0%, rgba(0, 124, 192, 0.2) 100%);
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(0, 124, 192, 0.2) 100%);
+}
+.sl-backgroundimage {
+  /* moved from sapMGlobalBackgroundImage */
+
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../img-RTL/bg_white_transparent.png);
+  opacity: 1;
+  background-repeat: repeat;
+  background-position:right top;
+  background-size: auto;
+}
+.sl-band.Repeat {
+  /* sapMLIB */
+
+  border-bottom: 1px solid #e5e5e5;
+}
+.sl-band.GroupHeaderTrailer {
+  background-color: #f2f8fc;
+}
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('fonts/OpenSans-Regular.eot');
+  src: url('fonts/OpenSans-Regular.eot') format('embedded-opentype'), url('fonts/OpenSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans-Semibold';
+  src: url('fonts/OpenSans-Semibold.eot');
+  src: url('fonts/OpenSans-Semibold.eot') format('embedded-opentype'), url('fonts/OpenSans-Semibold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans-Italic';
+  src: url('fonts/OpenSans-Italic.eot');
+  src: url('fonts/OpenSans-Italic.eot') format('embedded-opentype'), url('fonts/OpenSans-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('fonts/OpenSans-Bold.eot');
+  src: url('fonts/OpenSans-Bold.eot') format('embedded-opentype'), url('fonts/OpenSans-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OpenSans-CondBold';
+  src: url('fonts/OpenSans-CondBold.eot');
+  src: url('fonts/OpenSans-CondBold.eot') format('embedded-opentype'), url('fonts/OpenSans-CondBold.ttf') format('truetype');
+}
+/* ============================================= */
+/* CSS for control sap.m/Button.control */
+/* ============================================= */
+.sl-button {
+  /* sapMBtn */
+
+  appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -webkit-user-select: none;
+  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  -ms-background-clip: padding-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  cursor: pointer;
+  height: 2.75em;
+  line-height: 2.75em;
+  margin: 0;
+  min-width: 2.75em;
+  padding:0 .625em 0 .625em;
+  text-align: center;
+}
+.sl-button > span {
+  /* sapMBtnContent */
+
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: top;
+}
+/*.sapMBtnDisabled {
+  cursor: default;
+}*/
+/* ============================================= */
+/* CSS for control sap.m/Button.control          */
+/* BlueCrystal theme                             */
+/* ============================================= */
+.sl-button {
+  /* sapMBtn */
+
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 0.875rem;
+  border: none;
+  height: 3.0rem;
+  min-width: 3.0rem;
+  margin: 0;
+  padding: 0;
+  /*@ moved from sapMBtnDefault*/
+
+  background-color: #f7f7f7;
+  color: #333333;
+  text-shadow:0 0.063rem 0 #ffffff;
+  border: 1px solid #bfbfbf;
+  vertical-align: top;
+  /*@ moved from sapMBtnPaddingLeft & sapMBtnPaddingRight */
+
+  padding-right: 1.0rem;
+  padding-left: 1.0rem;
+}
+.sl-button:active,
+.sl-button.active {
+  /* sapMBtnActive */
+
+  background-color: #007cc0;
+  color: #ffffff;
+}
+.sl-button:focus {
+  outline: none;
+}
+.sl-button > span {
+  /* sapMBtnContent */
+
+  line-height: 3.0rem;
+}
+/*
+.sapMBtnContentSpan {
+  vertical-align: top;
+}
+.sapMBtnContent > span {
+  vertical-align: top;
+}
+.sapMBtnContent > img {
+  vertical-align: middle;
+  max-height: 3rem;
+}
+.sapMBtnContent .sapUiIcon {
+  font-size: 1.375rem;
+  line-height: 3.0rem;
+  width: 3.0rem;
+  text-align: center;
+  margin: 0;
+}*/
+/* ---------------------------------------- */
+/* .sapMBtnDefault,
+.sapMBtnBack,
+.sapMBtnUp {
+  background-color: #f7f7f7;
+  color: #333333;
+  text-shadow: 0 0.063rem 0 #ffffff;
+  border: 1px solid #bfbfbf;
+  vertical-align: top;
+} */
+.sl-button:action,
+.sl-button.active {
+  color: #ffffff;
+  text-shadow:none;
+  border: 1px solid #007cc0;
+}
+.sl-button.disabled {
+  background-color: #f7f7f7;
+  color: rgba(51, 51, 51, 0.25);
+  text-shadow:none;
+  border: 1px solid #bfbfbf;
+  cursor: default;
+}
+/* .sapMBtnDefault .sapMBtnContent .sapUiIcon,
+.sapMBtnBack .sapMBtnContent .sapUiIcon,
+.sapMBtnUp .sapMBtnContent .sapUiIcon,
+.sapMBtnTransparent .sapMBtnContent .sapUiIcon {
+  font-size: 1.375rem;
+  line-height: 3.0rem;
+  color: #666666;
+  width: 3.0rem;
+  text-align: center;
+}
+.sapMBtnDefault:active .sapMBtnContent .sapUiIcon,
+.sapMBtnDefault.sapMBtnActive .sapMBtnContent .sapUiIcon,
+.sapMBtnBack:active .sapMBtnContent .sapUiIcon,
+.sapMBtnBack.sapMBtnActive .sapMBtnContent .sapUiIcon,
+.sapMBtnUp:active .sapMBtnContent .sapUiIcon,
+.sapMBtnUp.sapMBtnActive .sapMBtnContent .sapUiIcon,
+.sapMBtnTransparent:active .sapMBtnContent .sapUiIcon,
+.sapMBtnTransparent.sapMBtnActive .sapMBtnContent .sapUiIcon {
+  font-size: 1.375rem;
+  line-height: 3.0rem;
+  color: #ffffff;
+  width: 3.0rem;
+  text-align: center;
+} */
+/* ---------------------------------------- */
+.sl-button.Accept {
+  /* .sapMBtnAccept */
+
+  background-color: #007833;
+  color: #ffffff;
+}
+.sl-button.Accept > span {
+  /* .sapMBtnAccept .sapMBtnContent*/
+
+  padding-top: 1px;
+}
+.sl-button.Accept:active,
+.sl-button.Accept.active {
+  background-color: #005f28;
+}
+.sl-button.Accept.disabled,
+.sl-button.Accept.disabled:active {
+  background-color: #bfddcc;
+  color: #ffffff;
+  border: none;
+  cursor: default;
+}
+/* ---------------------------------------- */
+.sl-button.Reject {
+  /* .sapMBtnReject */
+
+  background-color: #cc1919;
+  color: #ffffff;
+}
+.sl-button.Reject > span {
+  /* .sapMBtnReject .sapMBtnContent */
+
+  padding-top: 1px;
+}
+.sl-button.Reject:active,
+.sl-button.Reject.active {
+  background-color: #b51616;
+}
+.sl-button.Reject.disabled,
+.sl-button.Reject.disabled:active {
+  background-color: #f2c6c6;
+  color: #ffffff;
+  border: none;
+  cursor: default;
+}
+/* ============================================= */
+/* CSS for control sap.m/Label.control */
+/* ============================================= */
+.sl-label {
+  /* sapMLabel */
+
+  color: #000000;
+  font-size: 16px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  cursor: text;
+}
+.sl-label.Bold {
+  /* sapMLabelBold */
+
+  font-weight: bold;
+}
+/* .sap-desktop .sapMLIBCursor .sapMLabel,
+.sap-desktop .sapMLIBCursor + .sapMListTblSubRow .sapMLabel {
+  cursor: pointer;
+} */
+/* ============================================= */
+/* CSS for control sap.m/Label.control           */
+/* BlueCrystal theme                             */
+/* ============================================= */
+.sl-label {
+  color: #444444;
+  font-size: 0.875rem;
+  font-family: 'OpenSans-Regular', sans-serif;
+}
+.sl-label.Bold {
+  /* sapMLabel.sapMLabelBold */
+
+  font-family: 'OpenSans-Semibold', sans-serif;
+}
+/* .sapMLabelRequired:before {
+  content: "*";
+  color: #007cc0;
+  font-size: 1rem;
+} */
+.sl-image {
+  /* sapMImg */
+
+  border: none;
+  /* fix the highlight color on tap*/
+
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+.sl-image.NoImg {
+  /* sapMNoImg */
+
+  visibility: hidden;
+}
+/* fix chrome browser yellow border on focus problem*/
+.sl-image:focus {
+  outline: none;
+}
+/* ============================================= */
+/* CSS for control sap.m/InputBase.control       */
+/* BlueCrystal theme                             */
+/* ============================================= */
+.sl-input {
+  /* sapMInputBase */
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  display: inline-block;
+  margin:0.25rem 0 0.25rem 0;
+  height: 2.5rem;
+  vertical-align: top;
+  cursor: text;
+  /* moved from sapMInputBaseCursor */
+
+}
+.sl-input > input {
+  /* sapMInputBaseInner */
+
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #bfbfbf;
+  border-radius:0;
+  -webkit-appearance: none;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  font-family: 'OpenSans-Regular', sans-serif;
+  padding:0.625rem 0.625rem 0.563rem 0.625rem;
+  line-height: normal;
+  height: 2.5rem;
+  vertical-align: top;
+  cursor: text;
+  /* moved from sapMInputBaseCursor > input */
+
+  width: 100%;
+  /*@ fit the parents(sapMInput) width */
+
+}
+.sl-input > input::-webkit-input-placeholder {
+  color: #707070;
+  font-size: 0.875rem;
+  font-family: 'OpenSans-Italic', sans-serif;
+}
+.sl-input > input:-ms-input-placeholder {
+  color: #707070;
+  font-size: 0.875rem;
+  font-family: 'OpenSans-Italic', sans-serif;
+}
+/* .sapMInputBasePlaceholder {
+  color: #707070;
+  position: absolute;
+  line-height: normal;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 0.875rem;
+  font-family: 'OpenSans-Italic', sans-serif;
+  font-style: italic;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 0.688rem 0.688rem 0.625rem 0.688rem;
+} */
+.sl-input.Warning > input {
+  /* .sapMInputBaseWarningInner.sapMInputBaseInner */
+
+  border: 2px solid #f0ab00;
+  padding:0.563rem 0.563rem 0.5rem 0.563rem;
+}
+.sl-input.Error > input {
+  /* .sapMInputBaseErrorInner.sapMInputBaseInner */
+
+  border: 2px solid #d14900;
+  padding:0.563rem 0.563rem 0.5rem 0.563rem;
+}
+.sl-input.Success > input {
+  /* .sapMInputBaseSuccessInner.sapMInputBaseInner */
+
+  border: 2px solid #008a3b;
+  padding:0.563rem 0.563rem 0.5rem 0.563rem;
+}
+.sl-input.ReadOnly > input {
+  /* .sapMInputBaseReadonlyInner.sapMInputBaseInner */
+
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+.sl-input > input:focus {
+  outline: none;
+  outline-width: 0;
+}
+.sl-input > input:focus:not(.sl-input.Warning > input):not(.sl-input.Error > input):not(.sl-input.Success > input):not(.sl-input.ReadOnly > input) {
+  border: 1px solid #007cc0;
+}
+/* .sapMInputBaseViewMode.sapMInputBase {
+  height: 1.25rem;
+}
+.sapMInputBaseViewModeInner.sapMInputBaseInner {
+  line-height: 1.25rem;
+  height: 1.25rem;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+} */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* .sapMInputBaseMessage {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #bfbfbf;
+  font-size: 0.875rem;
+  font-family: 'OpenSans-Regular', sans-serif;
+  padding: 0.625rem 0.625rem 0.563rem 0.625rem;
+  line-height: normal;
+  vertical-align: top;
+} */
+/* ====================================== */
+/* CSS for control sap.m/Textarea.control */
+/* uses sapMInputBase styles 			  */
+/* ====================================== */
+.sl-textarea > textarea {
+  /*@ moved from sapMTextAreaInner */
+
+  line-height: 1.6em;
+  overflow: auto;
+  /*@ moved from .sapMTextArea > .sapMInputBaseInner */
+
+  line-height: 1.4;
+  height: auto;
+  -webkit-transform:none;
+  /*@ copied from .sapMInputBase, .sapMInputBaseInner */
+
+  font: inherit;
+}
+/* .sapMTextAreaReadOnly {
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+} */
+/* ============================================= */
+/* CSS for control sap.m/TextArea.control        */
+/* BlueCrystal theme                             */
+/* ============================================= */
+.sl-textarea {
+  /* sapMInputBase.sapMTextArea */
+
+  /* moved from sapMInputBase */
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  display: inline-block;
+  margin:0.25rem 0 0.25rem 0;
+  height: 2.5rem;
+  vertical-align: top;
+  /* moved from sapMInputBaseCursor */
+
+  cursor: text;
+  /* moved from sapMInputBase.sapMTextArea */
+
+  height: auto;
+}
+/*.sapMTextArea > .sapMInputBaseReadonlyInner.sapMInputBaseInner {
+  border: 1px solid #bfbfbf;
+  background-color: transparent;
+}*/
+/* ============================================= */
+/* CSS for control sap.m/CheckBox.control */
+/* ============================================= */
+.sl-checkbox {
+  /*sapMCb*/
+
+  display: inline-block;
+  position: relative;
+  /* moved from sapMPointer */
+
+  cursor: pointer;
+}
+.sl-checkbox > div {
+  /*sapMCbBg*/
+
+  height: 2em;
+  width: 2em;
+  position: relative;
+  display: inline-block;
+  top: 0.7em;
+}
+.sl-checkbox > div > input {
+  /*sapMCbBg > .sapMCbMark, .sapMCbBg.sapMCbMark > input */
+
+  font-size: inherit;
+}
+/* .sapMLIB-CTX .sapMCb {
+  height: 3em;
+  width: 3em;
+} */
+/* ============================================= */
+/* CSS for control sap.m/CheckBox.control        */
+/* BlueCrystal theme                             */
+/* ============================================= */
+.sl-checkbox {
+  /*sapMCb*/
+
+  box-sizing: border-box;
+  height: 3rem;
+  line-height: 3rem;
+  vertical-align: top;
+  text-align: left;
+  padding:0 3rem 0 0;
+}
+.sl-checkbox > label {
+  vertical-align: top;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sl-checkbox > div {
+  /*sapMCbBg*/
+
+  /* check box itself */
+
+  position: absolute;
+  right: 0.8125em;
+  top: 0.8125em;
+  height: 1.125rem;
+  width: 1.125rem;
+  line-height: 1.125rem;
+  padding: 0;
+  text-align: center;
+  border: solid 0.125rem #bfbfbf;
+  border-radius:0.125rem;
+  -webkit-focus-ring-color: none;
+  -webkit-border-radius:0.125rem;
+}
+@font-face {
+  font-family: 'SAP-icons';
+  src: url('fonts/SAP-icons.eot');
+  src: url('fonts/SAP-icons.eot') format('embedded-opentype'), url('fonts/SAP-icons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.sl-checkbox > div.checked:before {
+  /* .sapMCbBg.sapMCbMarkChecked */
+
+  content: "\e05b";
+  font-family: "SAP-icons";
+  color: #007cc0;
+}
+.sl-checkbox > div > input {
+  position: absolute;
+  right: -10em;
+  -webkit-appearance: none;
+  visibility: hidden;
+}
+.sl-checkbox > div:focus,
+.sl-checkbox > div:active {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  outline: none;
+}
+/* .sapMLIBActive .sapMCbBg,
+.sapMLIBActive .sapMCbBg.sapMCbMarkChecked,
+.sapMLIBActive .sapMCbBg.sapMCbBgDis,
+.sapMLIBActive .sapMCbBg.sapMCbBgDis.sapMCbMarkChecked {
+  border-color: #ffffff;
+} */
+.sl-checkbox > div.checked {
+  /* .sapMCbBg.sapMCbMarkChecked */
+
+  border-color: #007cc0;
+}
+.sl-checkbox > div.disabled {
+  /* .sapMCbBg.sapMCbBgDis */
+
+  border-color:rgba(191, 0.25) 191, 191,;
+}
+.sl-checkbox > div.disabled > input.checked {
+  /* .sapMCbBg.sapMCbBgDis.sapMCbMarkChecked */
+
+  border-color:rgba(0, 0.25) 192, 124,;
+}
+/* .sapMActive .sapMCbBg.sapMCbActiveStateOff.sapMCbMarkChecked:before,
+.sapMCbBg:active.sapMCbActiveStateOff.sapMCbMarkChecked:before,
+.sapMActive .sapMCbBg.sapMCbMarkChecked:before,
+.sapMCbBg:active.sapMCbMarkChecked:before */
+.sl-checkbox > div:active > input.checked:before {
+  color: #007cc0;
+}
+/* .sapMCbBg.sapMCbBgDis.sapMCbMarkChecked:before  */
+.sl-checkbox > div.disabled > input.checked:before {
+  color: rgba(0, 124, 192, 0.25);
+}
+/* ======================================= */
+/* CSS for control sap.m/Select.control    */
+/* ======================================= */
+/* commons */
+.sl-select,
+.sl-select > select,
+.sl-select > label {
+  /* sapMSltLabel */
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.sl-select > select,
+.sl-select > select > option {
+  font: inherit;
+}
+/* select */
+.sl-select {
+  position: relative;
+  display: inline-block;
+  /*@ moved from default style */
+
+  max-width: 100%;
+}
+.sl-select:not(.disabled) {
+  /* sapMSltDisabled */
+
+  cursor: pointer;
+}
+/* label */
+.sl-select > label {
+  /* sapMSltLabel */
+
+  display: block;
+  position: absolute;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+  text-indent: 0;
+  text-align: left;
+  -webkit-user-select: none;
+}
+/* native HTML select element */
+.sl-select > select {
+  -webkit-appearance: none;
+  position: relative;
+  cursor: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  opacity: 0;
+}
+.sl-select > select:not(.sl-select > select.hidden) {
+  /* sapMSltNativeHidden */
+
+  display: block !important;
+  /* override the inline CSS display property */
+
+}
+/* disable */
+.sl-select.disabled {
+  /*sapMSltDisabled*/
+
+  opacity: 0.3;
+  pointer-events: none;
+}
+/* custom select */
+.sl-select > input {
+  /* sapMSltInput */
+
+  position: absolute;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  right: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font: inherit;
+  width: 100%;
+  cursor: inherit;
+}
+/* ====================================================== */
+/* CSS for control sap.m/Select.control BlueCrystal theme */
+/* ====================================================== */
+/* commons */
+.sl-select > label,
+.sl-select > select {
+  font-size: 0.875em;
+  padding: 0 0.7142857142857143em;
+  border: 0.0714285714285714em solid #bfbfbf;
+}
+/* select */
+.sl-select {
+  padding: 0.25em 0;
+  height: 3em;
+}
+/* input */
+.sl-select > input {
+  /* sapMSltInput */
+
+  height: 3em;
+}
+/* =========================================== */
+/* CSS for control sap.m/MessageToast.control  */
+/* =========================================== */
+/* =========================================================== */
+/* CSS for control sap.m/MessageTost.control BlueCrystal theme */
+/* =========================================================== */
+.sl-toast {
+  /*sapMMT*/
+
+  font-size: 0.875rem;
+  padding: 1rem;
+  background-color: #333333;
+  background: -webkit-linear-gradient(#333333);
+  background: linear-gradient(#333333);
+  background-repeat: no-repeat;
+  text-shadow:0 0.0625rem #000000;
+  color: #ffffff;
+  -webkit-box-shadow:0 0.125rem 2.75rem 0.125rem rgba(0, 0, 0, 0.5),0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.15);
+  box-shadow:0 0.125rem 2.75rem 0.125rem rgba(0, 0, 0, 0.5),0 0.25rem 0.25rem 0 rgba(0, 0, 0, 0.15);
+  border-radius:0.1428571428571429rem;
+}
+/* ============================================= */
+/* CSS for controlsap.m/BusyIndicator.control    */
+/* ============================================= */
+/*sapMBusyIndicator*/
+/* .sapMBusyIndicatorLight, .sapMBusyIndicatorDark */.sl-busyindicator {
+  display: inline-block;
+  vertical-align: middle;
+}
+.sl-busyindicator > label {
+  /*sapMBsyIndLabel*/
+
+  vertical-align: middle;
+  padding-right: .5em;
+}
+/* .sapMBsyIndIcon {
+  vertical-align: middle;
+  transform: rotate(0deg) translateZ(0);
+  transition-duration: 0ms;
+  animation-name: sapMBsyIndRotate;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-transform: rotate(0deg) translateZ(0);
+  -webkit-transition-duration: 0ms;
+  -webkit-animation-name: sapMBsyIndRotate;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -ms-transform: rotate(0deg) translateZ(0);
+  -ms-transition-duration: 0ms;
+  -ms-animation-name: sapMBsyIndRotate;
+  -ms-animation-duration: 2s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+}
+@keyframes sapMBsyIndRotate {
+  from {
+    transform: rotate(0deg) translateZ(0);
+  }
+  to {
+    transform: rotate(360deg) translateZ(0);
+  }
+}
+@-webkit-keyframes sapMBsyIndRotate {
+  from {
+    -webkit-transform: rotate(0deg) translateZ(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateZ(0);
+  }
+} */
+.sl-spinner {
+  /*sapMSpinner*/
+
+  vertical-align: middle;
+  display: inline-block;
+  position: relative;
+}
+/* .sapMSpin {
+  position: relative;
+  height: 100%;
+  width: 100%;
+} */
+/* =============================================== */
+/* CSS for control sap.m/BusyIndicator.control     */
+/* BlueCrystal theme                               */
+/* =============================================== */
+canvas.sl-spincanvas {
+  /* sapMSpinCanvas */
+
+  color: #007cc0;
+  width: 2em;
+  height: 2em;
+}
+/* .sapMBusyIndicatorLight > canvas.sapMSpinCanvas {
+  color: #ffffff;
+} */
+.sapMBtn span.sapBtnBadgeSpan,
+.sapMBtnContent span.sapBtnBadgeSpan {
+  padding: 3px;
+  position: absolute;
+  top: 6px;
+  line-height: 12px;
+  font-size: 12px;
+  color: yellow;
+  background-color: #007cc0;
+  border-radius:6px;
+  box-shadow:-3px 3px 5px #888888;
+  z-index: 1;
+}
+div.sapTabBar {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+div.sapTabBar .sapMBtnDefault.sapMBtnActive {
+  background-image: url(img-RTL/bg.png);
+  color: #666666;
+  text-shadow:0 0.063rem 0 rgba(255, 255, 255, 0.5);
+}

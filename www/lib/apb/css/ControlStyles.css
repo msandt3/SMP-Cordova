@@ -1,0 +1,85 @@
+.sap-ios .sapMCb {
+	padding-bottom:0.1em;
+}
+button .sapMBtnContent, button.sapMBtn  .sapMBtnContent span.sapUiIcon{
+	line-height:1.5 rem;
+}
+.sapMPageScroll {
+	overflow-y: auto;
+}
+.sapMScrollCont {
+	overflow: auto;
+}
+.sap-ios .sapMPageScroll , .sap-android .sapMPageScroll {
+	overflow-y: auto;
+}
+.sap-ios .sapMScrollCont, .sap-android .sapMScrollCont {
+	overflow: auto;
+}
+
+
+/**checkbox and radiobutton**/
+.sapMLabel {
+	vertical-align: middle !important;
+	display: inline-block !important;
+}
+
+.sapMRbB, .sapMRbBOut {
+	vertical-align: middle !important;
+	display: table-cell !important;
+}
+
+.sapUiTheme-sap_bluecrystal .sapMCb .sapMLabel{
+ 	line-height:3rem;	
+	width:inherit !important;
+	vertical-align: middle !important;
+	display: table-cell !important;
+}
+
+.sapUiTheme-sap_bluecrystal .sapMRb .sapMRbBLabel{
+ 	line-height:3rem;	
+	vertical-align: middle !important;
+	display: table-cell !important;
+}
+
+.sapUiTheme-sap_mvi .sapMCb .sapMLabel{
+ 	line-height:2.75rem;	
+	width:inherit !important;
+	vertical-align: middle !important;
+	display: table-cell !important;
+}
+
+.sapUiTheme-sap_mvi .sapMRb .sapMRbBLabel{
+ 	line-height:2.75rem;	
+	vertical-align: middle !important;
+	display: table-cell !important;
+}
+
+.sapUiTheme-sap_mvi .sapMCbBg{
+	top: auto;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.sapUiTheme-sap_bluecrystal .sapMRbB,.sapUiTheme-sap_mvi .sapMRbB{
+	height: auto;
+	width: auto;
+	padding: 1px 10px 1px 1px;
+}
+
+.sapUiTheme-sap_mvi .sapMCbLabel {
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.sapUiTheme-sap_mvi .sapMCb, .sapUiTheme-sap_mvi .sap-ios .sapMCb{
+	white-space:nowrap;
+}
+
+/*flexbox fix*/
+.sapMHBox li.sapMFlexItem{
+	margin-left:40px !important;
+}
+.sapMHBox li:first-child{
+	margin-left:0px !important;
+}

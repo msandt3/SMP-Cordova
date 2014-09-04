@@ -1,0 +1,81 @@
+<!DOCTYPE html>  
+<html><head>  
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	 <meta charset="UTF-8">
+	<title>UI5 App</title>
+	<script src='./lib/common/sjcl.js'></script> 		
+	<script src='./lib/common/common.js'></script> 
+	<script src='./lib/superlist/sap.superlist.js'></script>
+	<script src='./lib/makit/scripts/sap.makit-3.0.min.js'></script>
+	<script src='./lib/common/Data.js'></script> 
+	<script src='./lib/common/datajs-1.1.0.min.js'></script> 
+	<script src='datasources.js'></script> 
+	<script type="text/javascript" src="cordova.js"></script>
+	
+    <script id='sap-ui-bootstrap' type='text/javascript'  
+        src='./lib/ui5/resources/sap-ui-core.js'  
+		data-sap-ui-preload=''
+        data-sap-ui-theme='sap_bluecrystal'  
+        data-sap-ui-libs='sap.m'></script>  
+	<link type="text/css" rel="stylesheet" href='./lib/apb/css/ControlStyles.css'>			
+
+</head>
+<body id="myBody" class='sapUiBody' style="height:100%;overflow:hidden;">
+	<script>
+		//Need to set the images folder location for the makit
+		window.$MA.setImagesFolder("./lib/makit/images/");
+		sap.ui.getCore().loadLibrary("sap.apb", "./lib/apb");
+		sap.ui.getCore().loadLibrary("sap.apb.makit", "./lib/apb/makit");
+		// let UI5 know that certain package (the one containing the Views/Controllers) is available locally (next to the HTML file)
+		sap.ui.localResources("ext");
+		sap.ui.localResources("view");
+		sap.ui.localResources("util");
+		jQuery.sap.registerModulePath('Application', 'Application');
+
+        function init(useLogonMan) {
+            if (window.cordova && useLogonMan == true) {
+                var appId = "com.kogi.smpdemo";  //AppID
+				var context = {
+					"serverHost": "",
+				    "https": "false",
+				    "serverPort": "8080",
+				    "user": "",
+				    "password": "",
+				    "communicatorId": "REST",
+				    "passcode": "password",
+				    "unlockPasscode": "password"
+				};
+                sap.Logon.init(logonSuccessCallback,errorCallback,appId,context,sap.logon.IabUi);
+            }
+            else {
+                jQuery.sap.require("Application");
+                var oApp = new Application({ root : "myBody" });
+            }
+            
+        }
+        function logonSuccessCallback(result) {
+            SAP.DataSourceAPI.setLogonApplicationContext(result);
+            jQuery.sap.require("Application");
+            var oApp = new Application({ root : "myBody" });
+        }
+        function errorCallback(e) {
+            console.log(e.message);
+        }
+        
+		//Need to be executed in the onload event to ensure all libraries are properly loaded
+		window.onload = function () {
+			if (window.cordova) {
+			  document.addEventListener("deviceready", onDeviceReady, false);
+			}
+			else {
+				onDeviceReady();
+			}
+		}
+		onDeviceReady = function() {
+			// Launch application
+			init(false);
+			}
+	</script>
+</body>
+</html>
+	

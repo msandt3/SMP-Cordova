@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0" id="com.kogi.smpdemo" version="1.0.0" revision="-1">
+				<!-- *** This is an automatically generated document. Do not edit it: your changes will be automatically overwritten ** -->
+				<name>SMPCLOUDDEMO</name>
+				<description>SMPCLOUDDEMO</description>
+				<author href="SMPCLOUDDEMO">Guest</author>
+				<preference name="phonegap-version" value="2.9.0" />
+				<preference name="fullscreen" value="True" />
+				<preference name="ios-statusbarstyle" value="default" />
+				<preference name="webviewbounce" value="True" />
+				<preference name="prerendered-icon" value="True" />
+				<preference name="stay-in-webview" value="False" />
+				<preference name="detect-data-types" value="True" />
+				<preference name="exit-on-suspend" value="False" />
+				<preference name="show-splash-screen-spinner" value="True" />
+				<preference name="auto-hide-splash-screen" value="True" />
+				<preference name="android-minSdkVersion" value="7" />
+				<preference name="android-installLocation" value="auto" />
+				<icon src="res/icon/icon_512.png" />
+				<icon src="res/icon/icon_android_36.png" gap:platform="android" gap:density="ldpi" />
+				<icon src="res/icon/icon_android_48.png" gap:platform="android" gap:density="mdpi" />
+				<icon src="res/icon/icon_android_72.png" gap:platform="android" gap:density="hdpi" />
+				<icon src="res/icon/icon_android_96.png" gap:platform="android" gap:density="xhdpi" />
+				<icon src="res/icon/icon_ios_57.png" gap:platform="iOS" width="57" height="57" />
+				<icon src="res/icon/icon_ios_72.png" gap:platform="iOS" width="72" height="72" />
+				<icon src="res/icon/icon_ios_114.png" gap:platform="iOS" width="114" height="114" />
+				<icon src="res/icon/icon_ios_144.png" gap:platform="iOS" width="144" height="144" />
+				<access origin="*" subdomains="false" browser_only="false" />
+				<feature name="App">
+								<param name="android-package" value="org.apache.cordova.App" />
+				</feature>
+				<preference name="sap-development-version" value="3.0.0" />
+				<preference name="sap-required-version" value="3.0.0" />
+</widget>

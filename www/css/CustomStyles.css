@@ -1,0 +1,116 @@
+/****custom style classes should not start with .sap, or it will not be list in classes selection dialog********/
+
+/***********************************************************************
+ * 	Background
+ **********************************************************************/
+ .BackGround-View-Green,.BackGround-Green , .BackGround-Green input, .BackGround-Green label,.BackGround-Green textarea{	
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdeb8e), color-stop(100%,#a5c956)) !important; /* Chrome,Safari4+ */	
+}
+.sap-ios .BackGround-Green li{ /*a fix for segmented button which remove the important tag*/
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cdeb8e), color-stop(100%,#a5c956));	
+}
+.BackGround-View-Yellow, .BackGround-Yellow, .BackGround-Yellow input, .BackGround-Yellow label,.BackGround-Yellow textarea{		
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd65e), color-stop(100%,#febf04)) !important; /* Chrome,Safari4+ */		
+}
+.sap-ios .BackGround-Yellow li{/*a fix for segmented button which remove the important tag*/		
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd65e), color-stop(100%,#febf04)); /* Chrome,Safari4+ */		
+}
+.BackGround-View-Red, .BackGround-Red , .BackGround-Red input, .BackGround-Red label,.BackGround-Red textarea{
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3019), color-stop(100%,#cf0404)) !important; /* Chrome,Safari4+ */	
+}
+.sap-ios .BackGround-Red li{/*a fix for segmented button which remove the important tag*/
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff3019), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */	
+}
+
+/***********************************************************************
+ * 	TextColor
+ **********************************************************************/
+ .TextColor-Green,.TextColor-Green > * {
+	color:green !important;	
+	stroke: green !important;
+}
+.TextColor-Yellow,.TextColor-Yellow > * {		
+	color:yellow !important;
+	stroke:yellow !important;		
+}
+.TextColor-Red, .TextColor-Red > *{
+	color:red !important;
+	stroke:red !important;
+}
+
+/***********************************************************************
+ * 	Round Border
+ **********************************************************************/
+.Border-Round, .Border-Round input,.Border-Round label{
+	-webkit-border-radius: 2em !important;
+}
+
+/***********************************************************************
+ * 	Font name/size 
+ **********************************************************************/
+.Font-arial-10,.sapUiView .Font-arial-10 > * {
+	font-family:'arial';
+	font-size:10px;
+ }
+.Font-courier-16,.sapUiView .Font-courier-16 > * {
+	font-family:'courier';
+	font-size:16px;
+ }
+.Font-verdana-12,.sapUiView .Font-verdana-12 > * {
+	font-family:'verdana';
+	font-size:12px;
+ }
+ 
+ 
+ .list-line1{  
+       padding-left:3px;  
+       padding-top:2px;  
+       float:left;  
+       width:100%;  
+       font-weight:bold;  
+}  
+.list-line2 {  
+       padding-left:3px;  
+       padding-top:2px;  
+       float:left;  
+       width:100%;  
+       color:#666666;  
+       font-size:80%;  
+       white-space: nowrap;  
+       overflow: hidden;  
+       text-overflow: ellipsis;  
+}  
+.left-image{  
+       -webkit-border-radius: 6px;  
+       -moz-border-radius: 6px;  
+       border-radius: 6px;  
+       height:64px;  
+       width:64px;  
+       margin:1px;  
+       vertical-align:middle;  
+}  
+.Ter {  
+       font-size:12px;  
+       font-weight:bold;  
+       color:red;  
+       padding-left:3px;  
+       padding-top:2px;  
+}  
+.Lea {  
+       font-size:12px;  
+       font-weight:bold;  
+       color:blue;  
+       padding-left:3px;  
+       padding-top:2px;  
+}  
+.Act {  
+       font-size:12px;  
+       font-weight:bold;  
+       color:green;  
+       padding-left:3px;  
+       padding-top:2px;  
+}  
+.sl-panel.mainPanel {  
+       width:70%;  
+} 
+ 

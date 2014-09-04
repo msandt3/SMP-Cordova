@@ -1,0 +1,98 @@
+{
+	"TransitionEffect": "pulldown",
+	"Content": [
+		{
+			"Type": "ListView",
+			"StyleClass": "",
+			"ID": "Levels",
+			"DataTable": {
+				"Content": [
+					{
+						"Name": "_id",
+						"DataType": "string",
+						"Path": "/_id",
+						"Type": "Column"
+					},
+					{
+						"Name": "created",
+						"DataType": "datetime",
+						"Path": "/created",
+						"Type": "Column"
+					},
+					{
+						"Name": "sections",
+						"DataType": "[]",
+						"Path": "/sections",
+						"Type": "Column"
+					},
+					{
+						"Name": "order",
+						"DataType": "number",
+						"Path": "/order",
+						"Type": "Column"
+					},
+					{
+						"Name": "name",
+						"DataType": "string",
+						"Path": "/name",
+						"Type": "Column"
+					}
+				],
+				"Url": "restful.Levels",
+				"SourceType": "RestService",
+				"navigationParameters": ""
+			},
+			"DetailBand": {
+				"StyleClass": "",
+				"Alignment": "Vertical",
+				"Content": [
+					{
+						"Type": "Panel",
+						"StyleClass": "",
+						"ID": "listPanel1",
+						"Alignment": "Horizontal",
+						"Content": [
+							{
+								"Type": "Label",
+								"Text": "name",
+								"Width": "35%",
+								"StyleClass": "'left-image'",
+								"ID": "levelName"
+							},
+							{
+								"Type": "Panel",
+								"StyleClass": "",
+								"ID": "Panel2",
+								"Alignment": "Vertical",
+								"Content": [
+									{
+										"Type": "Label",
+										"Text": "'Order: ' + order",
+										"StyleClass": "",
+										"ID": "Label2"
+									},
+									{
+										"Type": "Label",
+										"Text": "'Created: '+created",
+										"StyleClass": "",
+										"ID": "Label3"
+									},
+									{
+										"Type": "Label",
+										"Text": "'ID'+_id",
+										"StyleClass": "",
+										"ID": "Label4"
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"SummaryBand": {
+				"StyleClass": "",
+				"Alignment": "Vertical"
+			}
+		}
+	]
+}

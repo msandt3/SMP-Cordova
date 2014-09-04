@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>TabPage</name>
+
+	<documentation>TabPage control</documentation>
+
+	<baseType>sap.m/Page</baseType>
+	<properties>
+		<property name="tabText" type="sap.ui.core/string" group="Misc">
+			<documentation>tabText</documentation>
+		</property>
+		<property name="tabIcon" type="sap.ui.core/URI" group="Misc">
+			<documentation>tabIcon</documentation>
+		</property>
+		<property name="tabBadge" type="sap.ui.core/string" group="Misc">
+			<documentation>tabBadge</documentation>
+		</property>
+	</properties>
+</control>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<control xmlns="http://www.sap.com/sap.ui.library.xsd" >
+
+	<name>TabApp</name>
+
+	<documentation>TabApp control</documentation>
+
+	<baseType>sap.m/App</baseType>
+	<properties>
+		<property name="transition" type="TransitionType" defaultValue="door">
+			<documentation>transition</documentation>
+		</property>
+	</properties>
+	<events>
+	</events>
+	<aggregations>
+		<aggregation cardinality="0..1" name="tabBar" type="sap.m/Bar" visibility="hidden">
+			<documentation>tabBar</documentation>
+		</aggregation>
+	</aggregations>
+</control>

@@ -1,0 +1,22 @@
+{
+	"TransitionEffect": "pulldown",
+	"Content": [
+		{
+			"Type" : "ListView",
+			"ID" : "MainView",
+			"DataTable" : {
+				"SourceType" : "odata",
+				"Url" : "",
+				"Content" : []
+			},
+			"DetailBand" : {
+				"Content" : [],
+				"Alignment": "Vertical"
+			},
+			"SummaryBand" : {
+				"Content" : [],
+				"Alignment": "Vertical"
+			}
+		}
+	]
+}

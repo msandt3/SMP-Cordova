@@ -1,0 +1,11 @@
+fonts
+fonts/android-icons.otf
+fonts/ios-icons.otf
+library-complete.less
+library-parameters-RTL.json
+library-parameters.json
+library-RTL.css
+library.css
+library.less
+resources.txt
+sap_mvi.css
